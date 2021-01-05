@@ -1,1 +1,140 @@
-@charset "EUC-KR";
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, button, select, input {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 15px;
+    /* font: inherit; */
+    vertical-align: baseline;
+    font-family: 'Noto Sans KR','Apple SD Gothic Neo','malgun gothic','맑은 고딕','돋움','dotum';
+    text-decoration: none;
+    color: #666;
+}
+header{
+	background: #fff;
+    min-height: 80px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    border-bottom: 1px #ddd solid;
+}
+.container-full{
+	width: 100%;
+}
+header .container{
+	position: relative;
+}
+.container{
+	
+	max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+h1{
+	position: absolute;
+    left: 15px;
+    top: 0;
+    width: 110px;
+    height: 80px;
+}
+header #gnb{
+	float: left;
+}
+ol, ul{
+	list-style: none;
+}
+li{
+	padding: 0 15px;
+    display: block;
+    line-height: 80px;
+    color: #222;
+    font-size: 18px;
+    float: left;
+    top: 0;
+}
+header #gnb .menu li:first-child {
+	margin-left:210px; 
+}
+header h1 a{
+	display: block;
+    width: 100%;
+    height: 100%;
+	background: url("/img/header_ci.png")  no-repeat 0 0;;
+    text-indent: -9999px;
+}
+header #quick:after{
+	display: inline-block;
+    width: 9px;
+    height: 14px;
+    vertical-align: middle;
+    content: "";
+    background: url("/img/quick_ico.jpg") no-repeat center/contain;
+    margin-left: 5px;
+}
+
+header #util{
+	position: absolute;
+    right: 0;
+    top: 30px;
+}
+header #util>div{
+	float: left;
+	margin-left: 20px;
+}
+header #util>div a{
+	width: 20px;
+    height: 20px;
+    display: block;
+    text-indent: -9999px;
+} 
+header #top-search{
+	background: url("/img/header_util.png") no-repeat -20px 0;
+}
+header #util .quick a{
+	display: block;
+    width: 164px;
+    height: 80px;
+    background: #008bca;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 80px;
+    text-indent: 0;
+}
+header #util .quick{
+	position: absolute;
+    right: 0;
+    top: -30px;
+}
+#all-menu{
+	position: absolute;
+    right: 204px;
+    top: 30px;
+}
+#all-menu>a{
+	width: 20px;
+    height: 20px;
+    display: block;
+	background: url("/img/header_util.png") no-repeat 0 0;
+}
+header .language{
+	margin-left: 20px;
+    margin-right: 240px;
+}
+header .login>a{
+	background: url("/img/header_util.png") no-repeat -80px 0;
+}
+header .language>a{
+	background: url("/img/header_util.png") no-repeat -60px 0;
+}
+header .withposco{
+	position: absolute;
+    right: -180px;
+    top: 23px;
+}
