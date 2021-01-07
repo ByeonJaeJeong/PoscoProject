@@ -1,4 +1,7 @@
 @charset "UTF-8";
+#contents section{
+	height: 937px;
+}
 #visual video{
 	min-width: 100%;
     min-height: 100%;
@@ -8,4 +11,70 @@
     bottom: 0%;
     left: 50%;
     margin-left: -50%;
+}
+#visual .video_txt{
+	width: 100%;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+}
+section.posco_section{
+	width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+}
+.down img{
+	z-index: 9;
+    position: absolute;
+    width: 46px;
+    height: 70px;
+    bottom: 7%;
+    left: 50%;
+    margin-left: -23px;
+    animation-duration: 1.5s;
+    animation-name: down;
+    animation-iteration-count: infinite;
+}
+.dot_menu{
+	position: fixed;
+    bottom: 50%;
+    right: 30px;
+    margin-bottom: -80px;
+    z-index: 99;
+}
+.dot_menu ul{
+	display: flex;
+    align-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow: auto;
+}
+.dot_menu ul li{
+	margin: 5px 0px;
+}
+.dot_menu li a{
+	display: block;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #222;
+    background: #fff;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    overflow: hidden;
+}
+.dot_menu .on a{
+	background: #222
+}
+
+@keyframes down {
+	0% {transform: translateY(0px);}
+50% {transform: translateY(30px);}
+100% {transform: translateY(0px);}
 }
