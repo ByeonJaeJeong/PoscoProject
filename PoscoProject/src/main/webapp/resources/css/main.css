@@ -1,7 +1,10 @@
 @charset "UTF-8";
 #contents section{
 	height: 937px;
+	padding-top: 80px;
+	padding-bottom: 0px;
 }
+/* section 1 */
 #visual video{
 	min-width: 100%;
     min-height: 100%;
@@ -29,6 +32,7 @@ section.posco_section{
     overflow: hidden;
     z-index: 2;
 }
+
 .down img{
 	z-index: 9;
     position: absolute;
@@ -41,6 +45,104 @@ section.posco_section{
     animation-name: down;
     animation-iteration-count: infinite;
 }
+/* animation 효과 */
+@keyframes down {
+	0% {transform: translateY(0px);}
+50% {transform: translateY(30px);}
+100% {transform: translateY(0px);}
+}
+
+/* section 2 */
+#products{
+	background: #fff;
+    background-size: cover;
+    background-position: center;
+    border-bottom: 1px solid #eaeaea;
+}
+.posco_section .products_wrap .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -585px;
+    margin-top: -270px;
+    width: 100%;
+    height: 541px;
+}
+.posco_section .container .title {
+    font-size: 30px;
+    color: #333;
+    font-weight: 700;
+    text-align: center;
+}
+.posco_section .container .orangebar {
+    text-align: center;
+    margin-top: 10px;
+}
+.posco_section .container .orangebar span {
+    display: inline-block;
+    width: 60px;
+    height: 6px;
+    background-color: #f08900;
+}
+.posco_section .container .text {
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+    line-height: 20px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+.posco_section .products_wrap .container .learnmore_wrap{
+    width: 100%;
+    text-align: right;
+    margin-top: 10px;
+}
+.posco_section .products_wrap .container .learnmore_wrap > a:first-child {
+    margin-right: 15px;
+}
+
+.posco_section .products_wrap .container .products_list {
+    width: 100%;
+    margin-top: 10px;
+}
+.posco_section .products_wrap .container .products_list ul {
+    width: 100%;
+}
+.posco_section .products_wrap .container .products_list ul li {
+    float: left;
+    width: 20%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+.posco_section .products_wrap .container .products_list ul li .cap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0);
+    transition: all 1s;
+}
+.posco_section .products_wrap .container .products_list ul li .cap .products_gnb {
+    position: absolute;
+    top: 26px;
+    left: 20px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 350;
+    line-height: 25px;
+}
+.posco_section .products_wrap .container .products_list ul li > a > img {
+    transition: all 1s;
+    transform: scale(1);
+}
+.posco_section .products_wrap .container .products_list ul li:hover >a >img{
+	transition: all 1.1s;
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+/* 오른쪽 사이드메뉴  */
 .dot_menu{
 	position: fixed;
     bottom: 50%;
@@ -73,8 +175,7 @@ section.posco_section{
 	background: #222
 }
 
-@keyframes down {
-	0% {transform: translateY(0px);}
-50% {transform: translateY(30px);}
-100% {transform: translateY(0px);}
+/* 모바일  */
+.mobile{
+	display: none;
 }

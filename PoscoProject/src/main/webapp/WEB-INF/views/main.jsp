@@ -95,7 +95,70 @@
 			</div>
 		</section>
 		<!-- section products -->
-		<section class="posco_section" id="products"></section>
+		<section class="posco_section" id="products">
+			<div class="products_wrap">
+				<div class="container">
+					<div class="subject">
+						<h1 class="title">포스코 제품</h1>
+						<p class="orangebar">
+							<span></span>
+						</p>
+						<p class="text">
+							혁신적인 제품개발과 이용기술을 통한 고객가치 향상을 실현합니다.<br> 세계 최고의 프리미엄 제품과 서비스
+							제공을 위해 R&amp;D를 혁신하고 차별화된 솔루션 개발에 앞장서겠습니다.
+						</p>
+						<div class="learnmore_wrap">
+						<a href="#" class="learnmore_wrap mobile-hide product_gobtn">
+							<img src="/img/learnmore.png"/>
+						</a>
+						<a href="#" class="learnmore_wrap mobile-hide innovilt_gobtn">
+							<img src="/img/learnmore_e.png"/>
+						</a>
+						</div>
+						<div class="products_list">
+							<ul>
+								<li><a href="#" class="product_gobtn">
+									<img src="/img/products1.jpg" alt="산업별" class="pc" target="_blank">
+									<img src="/img/products1_m.jpg" alt="산업별" class="mobile" target="_blank">
+									<div class="cap">
+										<p class="products_gnb">산업별</p>
+									</div>
+								</a></li>
+								<li><a href="#" class="product_gobtn">
+									<img src="/img/products2.jpg" alt="제품별" class="pc" target="_blank">
+									<img src="/img/products2_m.jpg" alt="제품별" class="mobile" target="_blank">
+									<div class="cap">
+										<p class="products_gnb">제품별</p>
+									</div>
+								</a></li>
+								<li><a href="#" class="product_gobtn">
+									<img src="/img/products3.jpg" alt="메가트렌드" class="pc" target="_blank">
+									<img src="/img/products3_m.jpg" alt="메가트렌드" class="mobile" target="_blank">
+									<div class="cap">
+										<p class="products_gnb">메가트렌드</p>
+									</div>
+								</a></li>
+								<li><a href="#" class="product_gobtn">
+									<img src="/img/products4.jpg" alt="이용기술" class="pc" target="_blank">
+									<img src="/img/products4_m.jpg" alt="이용기술" class="mobile" target="_blank">
+									<div class="cap">
+										<p class="products_gnb">이용기술</p>
+									</div>
+								</a></li>
+								<li><a href="#" class="product_gobtn">
+									<img src="/img/products5.jpg" alt="제품 뉴스&스토리" class="pc" target="_blank">
+									<img src="/img/products5_m.jpg" alt="제품 뉴스&스토리" class="mobile" target="_blank">
+									<div class="cap">
+										<p class="products_gnb">산업별</p>
+									</div>
+								</a></li>
+							</ul>
+						</div>
+						<div class="learnmore_wrap"></div>
+					</div>
+				</div>
+			</div>
+		</section>
 		<!-- section media -->
 		<section class="posco_section" id="media"></section>
 		<!-- section culture -->
