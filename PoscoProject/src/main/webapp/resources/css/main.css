@@ -142,6 +142,12 @@ section.posco_section{
     transform: scale(1.1);
     opacity: 0.9;
 }
+/* section 3 */
+#media{
+	background: url(/img/posco_back.jpg) no-repeat;
+    background-size: cover;
+    border-bottom: 1px solid #eaeaea;
+}
 /* 오른쪽 사이드메뉴  */
 .dot_menu{
 	position: fixed;
@@ -175,6 +181,125 @@ section.posco_section{
 	background: #222
 }
 
+.container_wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.posco_section .media_wrap .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -585px;
+    margin-top: -296px;
+    width: 100%;
+    height: 792px;
+}
+.posco_section .media_wrap .container .container_wrap .media_sns {
+    position: relative;
+    width: 90%;
+    max-width: 1010px;
+    margin: 20px auto 0;
+}
+.posco_section .media_wrap .container .container_wrap .media_sns div {
+    float: left;
+    margin-top: 5px;
+}
+.posco_section .media_wrap .container .container_wrap .media_sns div img {
+    width: 100%;
+}
+.posco_section .media_wrap .container .container_wrap .media_sns ul {
+    float: right;
+}
+.posco_section .media_wrap .container .container_wrap .media_sns ul li {
+    float: left;
+    width: 25px;
+    height: 25px;
+    padding: 0 7px;
+}
+.posco_section .media_wrap .container .media_list {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.posco_section .media_wrap .container .media_list ul {
+    width: 1010px;
+    margin: 0 auto;
+}
+.posco_section .media_wrap .container .media_list ul li {
+    float: left;
+    width: 500px;
+    height: 225px;
+    position: relative;
+    overflow: hidden;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.posco_section .media_wrap .container .media_list ul li:nth-child(2), .posco_section .media_wrap .container .media_list ul li:nth-child(4) {
+    margin-right: 0px;
+}
+.posco_section .media_wrap .container .container_wrap .media_sns:after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+.posco_section .media_wrap .container .media_list ul li .cap {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 210px;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    transition: all 1s;
+}
+.posco_section .media_wrap .container .media_list ul li .cap .caption {
+    position: absolute;
+    top: 27px;
+    left: 14px;
+}
+.posco_section .media_wrap .container .media_list ul li .cap .ico_media {
+    position: absolute;
+    top: 27px;
+    right: 18px;
+}
+.posco_section .media_wrap .container .media_list ul li .cap div {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 15px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.posco_section .media_wrap .container .media_list ul li .cap div .date {
+    color: #fff;
+    font-size: 11px;
+    margin-bottom: 5px;
+}
+.posco_section .media_wrap .container .media_list ul li .cap div .title {
+    color: #fff;
+    font-size: 15px;
+    line-height: 21px;
+    text-align: left;
+    font-weight: 500;
+}
+.posco_section .media_wrap .container .media_list ul li .cap div .title span {
+    display: inline-block;
+    width: 96px;
+    height: 10px;
+    margin-left: 5px;
+    background: url(/img/arrow.png) no-repeat;
+}
+.posco_section .media_wrap .container .media_list ul li > a > img {
+    width: 100%;
+    transition: all 1s;
+    transform: scale(1);
+}
+
+.posco_section .media_wrap .container .media_list ul li:hover .cap {
+    width: 240px;
+    background: rgba(0,0,0,0.9);
+}
 /* 모바일  */
 .mobile{
 	display: none;
