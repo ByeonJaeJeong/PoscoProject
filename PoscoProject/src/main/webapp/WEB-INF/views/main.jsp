@@ -211,8 +211,7 @@
 												<p class="date">Dec 29, 2020</p>
 												<p class="title">
 													2020년 포스코의 <br class="only-pc">한해 돌아보기 <br
-														class="only-pc">
-													<span class="mobile-hide"></span>
+														class="only-pc"> <span class="mobile-hide"></span>
 												</p>
 											</div>
 										</div>
@@ -225,7 +224,11 @@
 											<img src="/img/ico_eye.png" class="ico_media mobile-hide">
 											<div>
 												<p class="date">Dec 23, 2020</p>
-												<p class="title">뜨겁고, 무겁고, <br class="only-pc">시끄러운 작업… <br class="only-pc">이제 로봇에게 맡겨요! <br class="only-pc"><span class="mobile-hide"></span></p>
+												<p class="title">
+													뜨겁고, 무겁고, <br class="only-pc">시끄러운 작업… <br
+														class="only-pc">이제 로봇에게 맡겨요! <br class="only-pc">
+													<span class="mobile-hide"></span>
+												</p>
 											</div>
 										</div>
 								</a></li>
@@ -237,7 +240,11 @@
 											<img src="/img/ico_movie.png" class="ico_media mobile-hide">
 											<div>
 												<p class="date">Dec 23, 2020</p>
-												<p class="title">일하며 배우며 나누며, <br class="only-pc">재능봉사단의 일상 속으로 <br class="only-pc"><span class="mobile-hide"></span></p>
+												<p class="title">
+													일하며 배우며 나누며, <br class="only-pc">재능봉사단의 일상 속으로 <br
+														class="only-pc">
+													<span class="mobile-hide"></span>
+												</p>
 											</div>
 										</div>
 								</a></li>
@@ -249,7 +256,11 @@
 											<img src="/img/ico_movie.png" class="ico_media mobile-hide">
 											<div>
 												<p class="date">Dec 29, 2020</p>
-												<p class="title">우리 아이가 자라는 <br class="only-pc">포스코 마을 <br class="only-pc"><span class="mobile-hide"></span></p>
+												<p class="title">
+													우리 아이가 자라는 <br class="only-pc">포스코 마을 <br
+														class="only-pc">
+													<span class="mobile-hide"></span>
+												</p>
 											</div>
 										</div>
 								</a></li>
@@ -260,7 +271,50 @@
 			</div>
 		</section>
 		<!-- section culture -->
-		<section class="posco_section" id="culture"></section>
+		<section class="posco_section" id="culture">
+			<div class="cultrue_wrap">
+				<div class="container">
+					<div class="subject">
+						<h1 class="title">
+							포스코 문화행사
+						</h1>
+						<p class="orangebar"><span></span></p>
+					</div>
+					<div class="culture_cont">
+						<div class="culture_exp">
+							<div class="explantion">
+								<h2>explantion</h2>
+								<p>지역주민의 화합과 풍요로운 문화생활을 위해 문화시설을 지원하고 수준 높은 공연을 개최하는 등 기업 메세나 활동에 적극 앞장서고 있습니다.
+								</p>
+							</div>
+							<div class="schedule">
+                                <img src="/docs/kor6/jsp/_images/main/schedule.jpg" alt="">
+                            </div>
+						</div>
+						<div class="culture_event">
+							<h2>Culture Event</h2>
+							<div class="culture_slide">
+								<div class="bx_wrapper">
+									<div class="bx-viewport">
+										<ul class="mySlider">
+											<li>
+												<a href="#" title="신종코로나 바이러스 확산으로 문화행사 공연 취소 안내 바로가기" tabindex="0">
+													<p class="culture_genre">Notice</p>
+													<p class="culture_title"><span>[공지] 문화행사 취소 안내</span></p>
+													<img src="/img/">
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="culture_info"></div>
+						<div class="culture_back"></div>
+					</div>
+				</div>
+			</div>
+		</section>
 		<!-- section about -->
 		<section class="posco_section" id="about"></section>
 	</div>
