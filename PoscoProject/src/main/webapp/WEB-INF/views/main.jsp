@@ -272,7 +272,7 @@
 		</section>
 		<!-- section culture -->
 		<section class="posco_section" id="culture">
-			<div class="cultrue_wrap">
+			<div class="culture_wrap">
 				<div class="container">
 					<div class="subject">
 						<h1 class="title">
@@ -282,13 +282,13 @@
 					</div>
 					<div class="culture_cont">
 						<div class="culture_exp">
-							<div class="explantion">
-								<h2>explantion</h2>
+							<div class="explanation">
+								<h2>Explanation</h2>
 								<p>지역주민의 화합과 풍요로운 문화생활을 위해 문화시설을 지원하고 수준 높은 공연을 개최하는 등 기업 메세나 활동에 적극 앞장서고 있습니다.
 								</p>
 							</div>
 							<div class="schedule">
-                                <img src="/docs/kor6/jsp/_images/main/schedule.jpg" alt="">
+                                <img src="/img/schedule.jpg" alt="">
                             </div>
 						</div>
 						<div class="culture_event">
@@ -301,7 +301,7 @@
 												<a href="#" title="신종코로나 바이러스 확산으로 문화행사 공연 취소 안내 바로가기" tabindex="0">
 													<p class="culture_genre">Notice</p>
 													<p class="culture_title"><span>[공지] 문화행사 취소 안내</span></p>
-													<img src="/img/">
+													<img src="/img/slide_img_10.jpg">
 												</a>
 											</li>
 										</ul>

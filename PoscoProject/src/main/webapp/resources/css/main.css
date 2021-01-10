@@ -1,4 +1,9 @@
 @charset "UTF-8";
+body {
+    line-height: 1;
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
 #contents section{
 	height: 937px;
 	padding-top: 80px;
@@ -302,8 +307,117 @@ section.posco_section{
 }
 
 /* section 4 */
+.posco_section .culture_wrap .container .culture_cont:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+#culture {
+    background: #fff;
+    background-size: cover;
+    border-bottom: 1px solid #eaeaea;
+}
+.posco_section .culture_wrap .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -585px;
+    margin-top: -273px;
+    width: 100%;
+    height: 545px;
+}
+.posco_section .culture_wrap .container .culture_cont {
+    width: 100%;
+    margin-top: 20px;
+}
+.posco_section .culture_wrap .container .culture_cont .culture_exp {
+    width: 222px;
+    border-right: 1px dashed #d7d7d7;
+}
+.posco_section .culture_wrap .container .culture_cont .culture_exp .explanation {
+    width: 100%;
+    border-top: 4px solid #008bca;
+}
+.posco_section .culture_wrap .container .culture_cont > div {
+    float: left;
+    height: 470px;
+    padding: 0 25px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.posco_section .culture_wrap .container .culture_cont .culture_exp .explanation h2 {
+    color: #008bca;
+}
+.posco_section .culture_wrap .container .culture_cont > div h2 {
+    font-size: 20px;
+    margin: 23px 0;
+    color: #333;
+}
+.posco_section .culture_wrap .container .culture_cont .culture_exp .explanation p {
+    color: #333;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: justify;
+    -webkit-font-smoothing: antialiased;
+}
 
+.posco_section .culture_wrap .container .culture_cont .culture_exp .schedule {
+    width: 100%;
+    border-top: 4px solid #333;
+    margin-top: 86px;
+}
+.posco_section .culture_wrap .container .culture_cont .culture_exp .schedule img {
+    width: 100%;
+    margin-top: 14px;
+}
+/*  culture event */
+.posco_section .culture_wrap .container .culture_cont .culture_event {
+    width: 422px;
+    border-top: 4px solid #333;
+    padding: 0;
+    margin: 0 25px;
+}
+.posco_section .culture_wrap .container .culture_cont .culture_event h2 {
+    text-align: right;
+}
+.posco_section .culture_wrap .container .culture_cont .culture_event .culture_slide {
+    width: 100%;
+    position: relative;
+    margin-top: 80px;
+}
+.bx-wrapper {
+    position: relative;
+    max-width: 500px;
+    margin: 0px auto;
+}
+.posco_section .culture_wrap .container .culture_cont .culture_event .culture_slide .culture_genre {
+    font-size: 11px;
+    font-weight: 500;
+    color: #008bca;
+    line-height: 15px;
+}
+.posco_section .culture_wrap .container .culture_cont .culture_event .culture_slide .culture_title {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 18px;
+    color: #333;
+}
+.posco_section .culture_wrap .container .culture_cont .culture_event .culture_slide .culture_title span {
+    font-size: 14px;
+    color: #000;
+}
 
+.box-viewport{
+	width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 314px;
+}
+.posco_section .culture_wrap .container .culture_cont .culture_event .culture_slide ul li a > img {
+    margin-top: 15px;
+    width: 100%;
+}
 /* section 5 */
 /* 모바일  */
 .mobile{

@@ -49,8 +49,11 @@ header #gnb{
 ol, ul{
 	list-style: none;
 }
-header #gnb .menu li{
-	padding: 0 15px;
+header #gnb .menu li {
+    float: left;
+}
+header #gnb .menu li > a {
+    padding: 0 15px;
     display: block;
     line-height: 80px;
     color: #222;
