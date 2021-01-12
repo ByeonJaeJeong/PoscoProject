@@ -10,10 +10,10 @@
 			<div id="gnb">
 				<ul class="menu">
 					<li><a href="#">회사소개</a></li>
-					<li><a href="#">기업시민</a></li>
+					<li><a href="#">기업시민<img src="/img/header/footer_ico_newwin.png" class="ml5" alt="새창열림"></a></li>
 					<li><a href="#">제품</a></li>
 					<li><a href="#">투자자정보</a></li>
-					<li><a href="#">포스코 뉴스룸</a></li>
+					<li><a href="#">포스코 뉴스룸<img src="/img/header/footer_ico_newwin.png" class="ml5" alt="새창열림"></a></li>
 				</ul>
 			</div>
 			<!--  gnb 끝 -->
@@ -38,7 +38,7 @@
 				<a href="#" class="btn-all-menu" aria-label="전체메뉴보기"></a>
 			</div>
 			<!-- all menu 끝  -->
-			<img src="/img/withposco.gif" alt="with POSCO" class="withposco mobile-hide">
+			<img src="/img/header/withposco.gif" alt="with POSCO" class="withposco mobile-hide">
 		</div>
 		<div class="all"></div>
 		<!-- container 끝 -->

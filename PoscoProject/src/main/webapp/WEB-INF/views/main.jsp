@@ -89,7 +89,7 @@
 				loop="loop"></video>
 			<div class="video_txt">
 				<p>
-					<img src="/img/slogan.png"
+					<img src="/img/main/section1/slogan.png"
 						alt="Challenge Together, Change Tomorrow 기업, 시민이 되다.함께, 미래가 되다">
 				</p>
 			</div>
@@ -109,48 +109,48 @@
 						</p>
 						<div class="learnmore_wrap">
 							<a href="#" class="learnmore_wrap mobile-hide product_gobtn">
-								<img src="/img/learnmore.png" />
+								<img src="/img/main/section2/learnmore.png" />
 							</a> <a href="#" class="learnmore_wrap mobile-hide innovilt_gobtn">
-								<img src="/img/learnmore_e.png" />
+								<img src="/img/main/section2/learnmore_e.png" />
 							</a>
 						</div>
 						<div class="products_list">
 							<ul>
 								<li><a href="#" class="product_gobtn"> <img
-										src="/img/products1.jpg" alt="산업별" class="pc" target="_blank">
-										<img src="/img/products1_m.jpg" alt="산업별" class="mobile"
+										src="/img/main/section2/products1.jpg" alt="산업별" class="pc" target="_blank">
+										<img src="/img/main/section2/products1_m.jpg" alt="산업별" class="mobile"
 										target="_blank">
 										<div class="cap">
 											<p class="products_gnb">산업별</p>
 										</div>
 								</a></li>
 								<li><a href="#" class="product_gobtn"> <img
-										src="/img/products2.jpg" alt="제품별" class="pc" target="_blank">
-										<img src="/img/products2_m.jpg" alt="제품별" class="mobile"
+										src="/img/main/section2/products2.jpg" alt="제품별" class="pc" target="_blank">
+										<img src="/img/main/section2/products2_m.jpg" alt="제품별" class="mobile"
 										target="_blank">
 										<div class="cap">
 											<p class="products_gnb">제품별</p>
 										</div>
 								</a></li>
 								<li><a href="#" class="product_gobtn"> <img
-										src="/img/products3.jpg" alt="메가트렌드" class="pc"
-										target="_blank"> <img src="/img/products3_m.jpg"
+										src="/img/main/section2/products3.jpg" alt="메가트렌드" class="pc"
+										target="_blank"> <img src="/img/main/section2/products3_m.jpg"
 										alt="메가트렌드" class="mobile" target="_blank">
 										<div class="cap">
 											<p class="products_gnb">메가트렌드</p>
 										</div>
 								</a></li>
 								<li><a href="#" class="product_gobtn"> <img
-										src="/img/products4.jpg" alt="이용기술" class="pc" target="_blank">
-										<img src="/img/products4_m.jpg" alt="이용기술" class="mobile"
+										src="/img/main/section2/products4.jpg" alt="이용기술" class="pc" target="_blank">
+										<img src="/img/main/section2/products4_m.jpg" alt="이용기술" class="mobile"
 										target="_blank">
 										<div class="cap">
 											<p class="products_gnb">이용기술</p>
 										</div>
 								</a></li>
 								<li><a href="#" class="product_gobtn"> <img
-										src="/img/products5.jpg" alt="제품 뉴스&스토리" class="pc"
-										target="_blank"> <img src="/img/products5_m.jpg"
+										src="/img/main/section2/products5.jpg" alt="제품 뉴스&스토리" class="pc"
+										target="_blank"> <img src="/img/main/section2/products5_m.jpg"
 										alt="제품 뉴스&스토리" class="mobile" target="_blank">
 										<div class="cap">
 											<p class="products_gnb">산업별</p>
@@ -177,36 +177,36 @@
 						<div class="media_sns">
 							<div>
 								<a href="#" target="_blank" class="newsroom_gobtn"> <img
-									src="/img/newsroom.png" alt="newsroom" />
+									src="/img/main/section3/newsroom.png" alt="newsroom" />
 								</a>
 							</div>
 							<ul>
 								<li><a href="http://www.youtube.com/helloposco"
 									target="_blank" class="youtube_gobtn"> <img
-										src="/img/youtube.png">
+										src="/img/main/section3/youtube.png">
 								</a></li>
 								<li><a href="http://www.linkedin.com/company/posco"
 									target="_blank" class="linkedin_gobtn"> <img
-										src="/img/linkedin.png">
+										src="/img/main/section3/linkedin.png">
 								</a></li>
 								<li><a href="https://www.facebook.com/HELLOPOSCO"
 									target="_blank" class="facebook_gobtn"> <img
-										src="/img/facebook.png">
+										src="/img/main/section3/facebook.png">
 								</a></li>
 								<li><a href="https://www.instagram.com/hello_posco/"
 									target="_blank" class="insta_gobtn"> <img
-										src="/img/insta.png">
+										src="/img/main/section3/insta.png">
 								</a></li>
 							</ul>
 						</div>
 						<div class="media_list">
 							<ul>
 								<li><a href="#" target="_blank" class="newsroom_gobtn">
-										<img src="/img/media1.jpg" class="pc"> <img
-										src="/img/media1_m.jpg" class="mobile">
+										<img src="/img/main/section3/media1.jpg" class="pc"> <img
+										src="/img/main/section3/media1_m.jpg" class="mobile">
 										<div class="cap">
-											<img src="/img/cap_news.jpg" alt="newsroom" class="caption">
-											<img src="/img/ico_eye.png" class="ico_media mobile-hide">
+											<img src="/img/main/section3/cap_news.jpg" alt="newsroom" class="caption">
+											<img src="/img/main/section3/ico_eye.png" class="ico_media mobile-hide">
 											<div>
 												<p class="date">Dec 29, 2020</p>
 												<p class="title">
@@ -217,11 +217,11 @@
 										</div>
 								</a></li>
 								<li><a href="#" target="_blank" class="newsroom_gobtn">
-										<img src="/img/media2.jpg" class="pc"> <img
-										src="/img/media2_m.jpg" class="mobile">
+										<img src="/img/main/section3/media2.jpg" class="pc"> <img
+										src="/img/main/section3/media2_m.jpg" class="mobile">
 										<div class="cap">
-											<img src="/img/cap_news.jpg" alt="newsroom" class="caption">
-											<img src="/img/ico_eye.png" class="ico_media mobile-hide">
+											<img src="/img/main/section3/cap_news.jpg" alt="newsroom" class="caption">
+											<img src="/img/main/section3/ico_eye.png" class="ico_media mobile-hide">
 											<div>
 												<p class="date">Dec 23, 2020</p>
 												<p class="title">
@@ -233,11 +233,11 @@
 										</div>
 								</a></li>
 								<li><a href="#" target="_blank" class="youtube_gobtn">
-										<img src="/img/media3.jpg" class="pc"> <img
-										src="/img/media3_m.jpg" class="mobile">
+										<img src="/img/main/section3/media3.jpg" class="pc"> <img
+										src="/img/main/section3/media3_m.jpg" class="mobile">
 										<div class="cap">
-											<img src="/img/cap_ytb.jpg" alt="youtube" class="caption">
-											<img src="/img/ico_movie.png" class="ico_media mobile-hide">
+											<img src="/img/main/section3/cap_ytb.jpg" alt="youtube" class="caption">
+											<img src="/img/main/section3/ico_movie.png" class="ico_media mobile-hide">
 											<div>
 												<p class="date">Dec 23, 2020</p>
 												<p class="title">
@@ -249,11 +249,11 @@
 										</div>
 								</a></li>
 								<li><a href="#" target="_blank" class="youtube_gobtn">
-										<img src="/img/media4.jpg" class="pc"> <img
-										src="/img/media4_m.jpg" class="mobile">
+										<img src="/img/main/section3/media4.jpg" class="pc"> <img
+										src="/img/main/section3/media4_m.jpg" class="mobile">
 										<div class="cap">
-											<img src="/img/cap_ytb.jpg" alt="youtube" class="caption">
-											<img src="/img/ico_movie.png" class="ico_media mobile-hide">
+											<img src="/img/main/section3/cap_ytb.jpg" alt="youtube" class="caption">
+											<img src="/img/main/section3/ico_movie.png" class="ico_media mobile-hide">
 											<div>
 												<p class="date">Dec 29, 2020</p>
 												<p class="title">
@@ -288,7 +288,7 @@
 								</p>
 							</div>
 							<div class="schedule">
-                                <img src="/img/schedule.jpg" alt="">
+                                <img src="/img/main/section4/schedule.jpg" alt="">
                             </div>
 						</div>
 						<div class="culture_event">
@@ -301,27 +301,93 @@
 												<a href="#" title="신종코로나 바이러스 확산으로 문화행사 공연 취소 안내 바로가기" tabindex="0">
 													<p class="culture_genre">Notice</p>
 													<p class="culture_title"><span>[공지] 문화행사 취소 안내</span></p>
-													<img src="/img/slide_img_10.jpg">
+													<img src="/img/main/section4/slide_img_10.jpg">
+												</a>
+											</li>
+											<li>
+												<a href="#" title="신종코로나 바이러스 확산으로 문화행사 공연 취소 안내 바로가기" tabindex="0">
+													<p class="culture_genre">Notice</p>
+													<p class="culture_title"><span>[공지] 문화행사 취소 안내</span></p>
+													<img src="/img/main/section4/slide_img_10.jpg">
 												</a>
 											</li>
 										</ul>
 									</div>
 								</div>
+								<div class="culture_controls">
+                                    <p class="prev_btn"><a href="#none"><img src="/img/main/section4/ic_prev.png" alt="prev"></a></p>
+                                    <p class="next_btn"><a href="#none"><img src="/img/main/section4/ic_next.png" alt="next"></a></p>
+                                </div>
 							</div>
 						</div>
-						<div class="culture_info"></div>
+						<div class="culture_info">
+							<div class="culture_news">
+								<h2 class="newsimg_pc">Culture News</h2>
+								<a href="https://newsroom.posco.com/kr/2020%eb%85%84%ec%97%90%eb%8f%84-%ea%b8%b0%ec%97%85%ec%8b%9c%eb%af%bc-%ed%8f%ac%ec%8a%a4%ec%bd%94-%eb%ac%b8%ed%99%94%ed%96%89%ec%82%ac%ea%b0%80-%ec%97%ac%eb%9f%ac%eb%b6%84%ea%b3%bc-%ed%95%a8%ea%bb%98/" target="_blank">
+                                    <img src="/img/main/section4/culture_news_m.jpg" alt="" class="newsimg_m">
+                                    <h2 class="newsimg_m">Culture News</h2>
+                                    <p class="news_title">2020년에도 기업시민 포스코 문화행사가 여러분과 함께 합니다!</p>
+                                    <img src="/img/main/section4/culture_news.jpg" alt="" class="newsimg_pc">
+                                </a>
+							</div>
+							<div class="culture_detail">
+								<h2>Detail Page</h2>
+                                <a href="/homepage/docs/kor6/jsp/prcenter/culture/s91c2000010m.jsp" title="문화행사 메인페이지 바로가기"><p>상세페이지 보러가기</p></a>
+							</div>
+						</div>
 						<div class="culture_back"></div>
 					</div>
 				</div>
 			</div>
 		</section>
 		<!-- section about -->
-		<section class="posco_section" id="about"></section>
+		<section class="posco_section" id="about">
+			<div class="about_wrap">
+				<div class="container">
+					<div class="subject">
+						<h1 class="title">About POSCO</h1>
+						<p class="orangebar"><span></span></p>
+						<p class="text">포스코는 '더불어 함께 발전하는 기업시민' 이라는 경영이념을 바탕으로 신뢰와 존경 받는 영속기업으로 발전해 나갈 것입니다.</p>
+					</div>
+					<div class="about_list">
+						<ul>
+							<li class="cont_ethics">
+								<img src="/img/main/section5/about1.png" alt="" class="pc">
+								<img src="/img/main/section5/about1_m.png" alt="" class="mobile">
+								<div class="cap">
+									<p class="title mobile-hide">회사소개</p>
+									<p class="text only-mobile-hide">세계에서 가장 <br>경쟁력있는 철강회사로서 <br>인류발전에 기여합니다.</p>
+									<a href="#"><img src="/img/main/section5/viewmore.png" alt="View more" class="link"></a>
+								</div>
+							</li>
+							<li class="cont_sustain">
+								<img src="/img/main/section5/about2.png" alt="" class="pc">
+								<img src="/img/main/section5/about2_m.png" alt="" class="mobile">
+								<div class="cap">
+									<p class="title mobile-hide">윤리경영</p>
+									<p class="text only-mobile-hide">올바른 일을 <br>올바르게 하는 것, <br>바로 포스코가 하는 것입니다.</p>
+									<a href="#"><img src="/img/main/section5/viewmore.png" alt="View more" class="link"></a>
+								</div>
+							</li>
+							<li class="cont_safety">
+								<img src="/img/main/section5/about4.png" alt="" class="pc">
+								<img src="/img/main/section5/about4_m.png" alt="" class="mobile">
+								<div class="cap">
+									<p class="title mobile-hide">안전환경 경영</p>
+									<p class="text only-mobile-hide">자율적 안전문화와 <br>산업보건 업무를<br>중점 추진하고 있습니다.</p>
+									<a href="#"><img src="/img/main/section5/viewmore.png" alt="View more" class="link"></a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
 	</div>
 	<!-- content 끝 -->
 	<!-- scroll 이미지 -->
 	<div class="down">
-		<img src="/img/drag-down.png" />
+		<img src="/img/main/section1/drag-down.png" />
 	</div>
 	<div class="dot_menu">
 		<ul>
