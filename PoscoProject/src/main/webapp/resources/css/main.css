@@ -4,6 +4,7 @@ body {
     font-size: 62.5%;
     overflow-x: hidden;
 }
+
 #contents section{
 	height: 880px;
 	padding-top: 80px;
@@ -293,7 +294,7 @@ section.posco_section{
     width: 96px;
     height: 10px;
     margin-left: 5px;
-    background: url(/img/arrow.png) no-repeat;
+    background: url(/img/main/section3/arrow.png) no-repeat;
 }
 .posco_section .media_wrap .container .media_list ul li > a > img {
     width: 100%;

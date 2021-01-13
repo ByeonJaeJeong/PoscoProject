@@ -1,0 +1,32 @@
+@charset "EUC-KR";
+/* footer ¼³Á¤ */
+footer {
+    border-top: 1px solid #ccc;
+    position: relative;
+    z-index: 3;
+}
+.container-full {
+    width: 100%;
+}
+/* top_btn */
+.top-btn {
+    width: 52px;
+    height: 68px;
+    position: fixed;
+    right: 20px;
+    bottom: 7%;
+    display: none;
+    z-index: 1;
+}
+.top-btn > a {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.top-btn > a > img {
+    width: 100%;
+    height: auto;
+}
+
+
+/*  */

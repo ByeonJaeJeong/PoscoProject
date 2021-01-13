@@ -7,7 +7,7 @@
 	src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
 <link href="/css/main.css" rel="stylesheet">
 <meta charset="EUC-KR">
-<title>POSCO |더불어 함께 발전하는 기업시민</title>
+<title>POSCO | 더불어 함께 발전하는 기업시민</title>
 
 </head>
 <body>
@@ -79,6 +79,20 @@
 				;
 			}
 		});
+		/* 스크롤 높이에 따른 top 버튼 사라짐 */
+		$(window).on("scroll",function(){
+			var ht= $(window).height();
+			//현재 브라우저의 넓이값 저장
+			//변수 scroll에 현재 문서가 스크롤된 거리 저장
+			var scroll = $(window).scrollTop();
+			//현재브라우저 넓이값 이 스크롤된 거리보다 길때)
+			if(scroll<1){
+				$(".top-btn").fadeOut();
+			}else{
+				$(".top-btn").fadeIn();
+			}
+		});
+		
 	</script>
 	<!-- script -->
 	<!-- content 시작 -->
@@ -400,5 +414,7 @@
 		</ul>
 	</div>
 	<!-- footer -->
+	<jsp:include page="footer.jsp"></jsp:include>
+	
 </body>
 </html>
