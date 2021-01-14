@@ -1,46 +1,46 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-	pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <link rel="stylesheet" href="/css/header.css">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 	<header class="container-full">
 		<div class="container">
 			<h1>
-				<a href="#">Æ÷½ºÄÚ</a>
+				<a href="#">í¬ìŠ¤ì½”</a>
 			</h1>
 			<div id="gnb">
 				<ul class="menu">
-					<li><a href="#">È¸»ç¼Ò°³</a></li>
-					<li><a href="#">±â¾÷½Ã¹Î<img src="/img/header/footer_ico_newwin.png" class="ml5" alt="»õÃ¢¿­¸²"></a></li>
-					<li><a href="#">Á¦Ç°</a></li>
-					<li><a href="#">ÅõÀÚÀÚÁ¤º¸</a></li>
-					<li><a href="#">Æ÷½ºÄÚ ´º½º·ë<img src="/img/header/footer_ico_newwin.png" class="ml5" alt="»õÃ¢¿­¸²"></a></li>
+					<li><a href="#">íšŒì‚¬ì†Œê°œ</a></li>
+					<li><a href="#">ê¸°ì—…ì‹œë¯¼<img src="/img/footer_ico_newwin.png" class="ml5" alt="ìƒˆì°½ì—´ë¦¼"></a></li>
+					<li><a href="#">ì œí’ˆ</a></li>
+					<li><a href="#">íˆ¬ìžìžì •ë³´</a></li>
+					<li><a href="#">í¬ìŠ¤ì½” ë‰´ìŠ¤ë£¸<img src="/img/footer_ico_newwin.png" class="ml5" alt="ìƒˆì°½ì—´ë¦¼"></a></li>
 				</ul>
 			</div>
-			<!--  gnb ³¡ -->
+			<!--  gnb ë -->
 			<div id="util">
 				<div class="search">
-					<a href="#" id="top-search">°Ë»ö</a>
+					<a href="#" id="top-search">ê²€ìƒ‰</a>
 				</div>
 				<div class="search-act inter-panel"></div>
 				<div class="login mobile-hide">
-					<a href="#">·Î±×ÀÎ</a>
+					<a href="#">ë¡œê·¸ì¸</a>
 				</div>
 				<div class="quick">
-					<a href="#" id="quick">ÀÚÁÖÃ£´Â ¸Þ´º</a>
+					<a href="#" id="quick">ìžì£¼ì°¾ëŠ” ë©”ë‰´</a>
 				</div>
 				<div class="language mobile-hide">
 					<a href="#" id="language">language</a>
 				</div>
 			</div>
-			<!--util ³¡  -->
+			<!--util ë  -->
 
 			<div id="all-menu">
-				<a href="#" class="btn-all-menu" aria-label="ÀüÃ¼¸Þ´ºº¸±â"></a>
+				<a href="#" class="btn-all-menu" aria-label="ì „ì²´ë©”ë‰´ë³´ê¸°"></a>
 			</div>
-			<!-- all menu ³¡  -->
+			<!-- all menu ë  -->
 			<img src="/img/header/withposco.gif" alt="with POSCO" class="withposco mobile-hide">
 		</div>
 		<div class="all"></div>
-		<!-- container ³¡ -->
+		<!-- container ë -->
 	</header>
-	<!-- container full ³¡ -->
+	<!-- container full ë -->

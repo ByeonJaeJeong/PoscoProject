@@ -1,18 +1,18 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-	pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
 <script type="text/javascript"
 	src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
 <link href="/css/main.css" rel="stylesheet">
-<meta charset="EUC-KR">
-<title>POSCO | ´õºÒ¾î ÇÔ²² ¹ßÀüÇÏ´Â ±â¾÷½Ã¹Î</title>
+<meta charset="UTF-8">
+<title>POSCO | ë”ë¶ˆì–´ í•¨ê»˜ ë°œì „í•˜ëŠ” ê¸°ì—…ì‹œë¯¼</title>
 
 </head>
 <body>
 	<jsp:include page="header.jsp"></jsp:include>
-	<!--header »ðÀÔ  -->
+	<!--header ì‚½ìž…  -->
 
 	<!-- script -->
 	<script type="text/javascript">
@@ -20,7 +20,7 @@
 		window.onload = function() {
 			var elm = ".posco_section";
 			$(elm).each(function(index) {
-				// °³º°ÀûÀ¸·Î Wheel ÀÌº¥Æ® Àû¿ë
+				// ê°œë³„ì ìœ¼ë¡œ Wheel ì´ë²¤íŠ¸ ì ìš©
 				$(this).on("mousewheel DOMMouseScroll", function(e) {
 					e.preventDefault();
 					var delta = 0;
@@ -35,7 +35,7 @@
 					var moveTop = $(window).scrollTop();
 					var elmSelecter = $(elm).eq(index);
 
-					// ¸¶¿ì½ºÈÙÀ» À§¿¡¼­ ¾Æ·¡·Î
+					// ë§ˆìš°ìŠ¤íœ ì„ ìœ„ì—ì„œ ì•„ëž˜ë¡œ
 					if (delta < 0) {
 						if ($(elmSelecter).next() != undefined) {
 							try {
@@ -43,7 +43,7 @@
 							} catch (e) {
 							}
 						}
-						// ¸¶¿ì½ºÈÙÀ» ¾Æ·¡¿¡¼­ À§·Î
+						// ë§ˆìš°ìŠ¤íœ ì„ ì•„ëž˜ì—ì„œ ìœ„ë¡œ
 					} else {
 						if ($(elmSelecter).prev() != undefined) {
 							try {
@@ -53,7 +53,7 @@
 						}
 					}
 
-					// È­¸é ÀÌµ¿ 0.8ÃÊ(800)
+					// í™”ë©´ ì´ë™ 0.8ì´ˆ(800)
 					$("html,body").stop().animate({
 						scrollTop : moveTop + 'px'
 					}, {
@@ -67,9 +67,9 @@
 
 		/* dot_menu li on */
 		$(window).on("scroll", function() {
-			//º¯¼ö ht¿¡ ÇöÀç ºê¶ó¿ìÀúÀÇ ³ÐÀÌ°ª ÀúÀå
+			//ë³€ìˆ˜ htì— í˜„ìž¬ ë¸Œë¼ìš°ì €ì˜ ë„“ì´ê°’ ì €ìž¥
 			var ht = $(window).height();
-			//º¯¼ö scroll¿¡ ÇöÀç ¹®¼­°¡ ½ºÅ©·ÑµÈ °Å¸® ÀúÀå
+			//ë³€ìˆ˜ scrollì— í˜„ìž¬ ë¬¸ì„œê°€ ìŠ¤í¬ë¡¤ëœ ê±°ë¦¬ ì €ìž¥
 			var scroll = $(window).scrollTop();
 			for (var i = 0; i < 7; i++) {
 				if (scroll >= ht * i && scroll < ht * (i + 1)) {
@@ -79,23 +79,75 @@
 				;
 			}
 		});
-		/* ½ºÅ©·Ñ ³ôÀÌ¿¡ µû¸¥ top ¹öÆ° »ç¶óÁü */
+		/* ìŠ¤í¬ë¡¤ ë†’ì´ì— ë”°ë¥¸ top ë²„íŠ¼ ì‚¬ë¼ì§ */
 		$(window).on("scroll",function(){
 			var ht= $(window).height();
-			//ÇöÀç ºê¶ó¿ìÀúÀÇ ³ÐÀÌ°ª ÀúÀå
-			//º¯¼ö scroll¿¡ ÇöÀç ¹®¼­°¡ ½ºÅ©·ÑµÈ °Å¸® ÀúÀå
+			//í˜„ìž¬ ë¸Œë¼ìš°ì €ì˜ ë„“ì´ê°’ ì €ìž¥
+			//ë³€ìˆ˜ scrollì— í˜„ìž¬ ë¬¸ì„œê°€ ìŠ¤í¬ë¡¤ëœ ê±°ë¦¬ ì €ìž¥
 			var scroll = $(window).scrollTop();
-			//ÇöÀçºê¶ó¿ìÀú ³ÐÀÌ°ª ÀÌ ½ºÅ©·ÑµÈ °Å¸®º¸´Ù ±æ¶§)
+			//í˜„ìž¬ë¸Œë¼ìš°ì € ë„“ì´ê°’ ì´ ìŠ¤í¬ë¡¤ëœ ê±°ë¦¬ë³´ë‹¤ ê¸¸ë•Œ)
 			if(scroll<1){
 				$(".top-btn").fadeOut();
 			}else{
 				$(".top-btn").fadeIn();
 			}
 		});
+///////////////////// ë¬¸í™”í–‰ì‚¬(ê³µì—°ì•ˆë‚´) ìŠ¬ë¼ì´ë“œ ////////////////////////
+
+		  var mySlider=$(".mySlider").bxSlider({
+		      mode:"horizontal",
+		  Â      speed:700,
+		  Â Â Â Â Â Â pager:false,
+		  Â Â Â Â Â Â moveSlides:1,
+		  Â Â Â Â Â Â slideWidth:"500%",
+		  Â Â Â Â Â Â minSlides:1,
+		  Â Â Â Â Â Â maxSlides:1,
+		        infiniteLoop:true,
+		  Â Â Â Â Â Â slideMargin:0,
+		  Â Â Â Â Â Â auto:false,
+		  Â Â Â Â Â Â autoHover:true,
+		  Â Â Â Â Â Â controls:false,
+		        autoControls:true,
+		        autoControlsCombine:true,
+
+		      	// ì›¹ì ‘ê·¼ì„± ì¶”ê°€
+			onSliderLoad: function(){
+				$(".mySlider .bx-clone").find("a").prop("tabIndex","-1");
+			},
+			onSlideAfter: function($slideElement, oldIndex, newIndex){
+		        if(newIndex == 0) {
+		                $(".mySlider li").find("a").prop("tabIndex","0");
+		                $(".mySlider .bx-clone").find("a").prop("tabIndex","-1");
+		            } else {
+		                for(var i = 0; i < 4; i++ ) {
+		                    $('.mySlider li').eq(oldIndex + i).find('a').attr('tabindex' , -1);
+		                    $('.mySlider li').eq((newIndex + 2) + i).find('a').attr('tabindex' , 0);
+		                }
+		            }
+			}
+		  });
+		
+		
+		// ì›¹ ì ‘ê·¼ì„±
+		$('.mySlider a').focusin(function () {
+			mySlider.stopAuto();
+		});
+
+		  $(".prev_btn").on("click",function(){
+		  mySlider.goToPrevSlide();
+		  return false;
+		  });
+
+		  $(".next_btn").on("click",function(){
+		  mySlider.goToNextSlide();
+		  return false;
+		  });
+
+		
 		
 	</script>
 	<!-- script -->
-	<!-- content ½ÃÀÛ -->
+	<!-- content ì‹œìž‘ -->
 	<div id="contents">
 		<!-- section visual -->
 		<section class="posco_section" id="visual">
@@ -104,7 +156,7 @@
 			<div class="video_txt">
 				<p>
 					<img src="/img/main/section1/slogan.png"
-						alt="Challenge Together, Change Tomorrow ±â¾÷, ½Ã¹ÎÀÌ µÇ´Ù.ÇÔ²², ¹Ì·¡°¡ µÇ´Ù">
+						alt="Challenge Together, Change Tomorrow ê¸°ì—…, ì‹œë¯¼ì´ ë˜ë‹¤.í•¨ê»˜, ë¯¸ëž˜ê°€ ë˜ë‹¤">
 				</p>
 			</div>
 		</section>
@@ -113,13 +165,13 @@
 			<div class="products_wrap">
 				<div class="container">
 					<div class="subject">
-						<h1 class="title">Æ÷½ºÄÚ Á¦Ç°</h1>
+						<h1 class="title">í¬ìŠ¤ì½” ì œí’ˆ</h1>
 						<p class="orangebar">
 							<span></span>
 						</p>
 						<p class="text">
-							Çõ½ÅÀûÀÎ Á¦Ç°°³¹ß°ú ÀÌ¿ë±â¼úÀ» ÅëÇÑ °í°´°¡Ä¡ Çâ»óÀ» ½ÇÇöÇÕ´Ï´Ù.<br> ¼¼°è ÃÖ°íÀÇ ÇÁ¸®¹Ì¾ö Á¦Ç°°ú ¼­ºñ½º
-							Á¦°øÀ» À§ÇØ R&amp;D¸¦ Çõ½ÅÇÏ°í Â÷º°È­µÈ ¼Ö·ç¼Ç °³¹ß¿¡ ¾ÕÀå¼­°Ú½À´Ï´Ù.
+							í˜ì‹ ì ì¸ ì œí’ˆê°œë°œê³¼ ì´ìš©ê¸°ìˆ ì„ í†µí•œ ê³ ê°ê°€ì¹˜ í–¥ìƒì„ ì‹¤í˜„í•©ë‹ˆë‹¤.<br> ì„¸ê³„ ìµœê³ ì˜ í”„ë¦¬ë¯¸ì—„ ì œí’ˆê³¼ ì„œë¹„ìŠ¤
+							ì œê³µì„ ìœ„í•´ R&amp;Dë¥¼ í˜ì‹ í•˜ê³  ì°¨ë³„í™”ëœ ì†”ë£¨ì…˜ ê°œë°œì— ì•žìž¥ì„œê² ìŠµë‹ˆë‹¤.
 						</p>
 						<div class="learnmore_wrap">
 							<a href="#" class="learnmore_wrap mobile-hide product_gobtn">
@@ -131,48 +183,50 @@
 						<div class="products_list">
 							<ul>
 								<li><a href="#" class="product_gobtn"> <img
-										src="/img/main/section2/products1.jpg" alt="»ê¾÷º°" class="pc" target="_blank">
-										<img src="/img/main/section2/products1_m.jpg" alt="»ê¾÷º°" class="mobile"
+										src="/img/main/section2/products1.jpg" alt="ì‚°ì—…ë³„" class="pc" target="_blank">
+										<img src="/img/main/section2/products1_m.jpg" alt="ì‚°ì—…ë³„" class="mobile"
 										target="_blank">
 										<div class="cap">
-											<p class="products_gnb">»ê¾÷º°</p>
+											<p class="products_gnb">ì‚°ì—…ë³„</p>
 										</div>
 								</a></li>
 								<li><a href="#" class="product_gobtn"> <img
-										src="/img/main/section2/products2.jpg" alt="Á¦Ç°º°" class="pc" target="_blank">
-										<img src="/img/main/section2/products2_m.jpg" alt="Á¦Ç°º°" class="mobile"
+										src="/img/main/section2/products2.jpg" alt="ì œí’ˆë³„" class="pc" target="_blank">
+										<img src="/img/main/section2/products2_m.jpg" alt="ì œí’ˆë³„" class="mobile"
 										target="_blank">
 										<div class="cap">
-											<p class="products_gnb">Á¦Ç°º°</p>
+											<p class="products_gnb">ì œí’ˆë³„</p>
 										</div>
 								</a></li>
 								<li><a href="#" class="product_gobtn"> <img
-										src="/img/main/section2/products3.jpg" alt="¸Þ°¡Æ®·»µå" class="pc"
+										src="/img/main/section2/products3.jpg" alt="ë©”ê°€íŠ¸ë Œë“œ" class="pc"
 										target="_blank"> <img src="/img/main/section2/products3_m.jpg"
-										alt="¸Þ°¡Æ®·»µå" class="mobile" target="_blank">
+										alt="ë©”ê°€íŠ¸ë Œë“œ" class="mobile" target="_blank">
 										<div class="cap">
-											<p class="products_gnb">¸Þ°¡Æ®·»µå</p>
+											<p class="products_gnb">ë©”ê°€íŠ¸ë Œë“œ</p>
 										</div>
 								</a></li>
 								<li><a href="#" class="product_gobtn"> <img
-										src="/img/main/section2/products4.jpg" alt="ÀÌ¿ë±â¼ú" class="pc" target="_blank">
-										<img src="/img/main/section2/products4_m.jpg" alt="ÀÌ¿ë±â¼ú" class="mobile"
+										src="/img/main/section2/products4.jpg" alt="ì´ìš©ê¸°ìˆ " class="pc" target="_blank">
+										<img src="/img/main/section2/products4_m.jpg" alt="ì´ìš©ê¸°ìˆ " class="mobile"
 										target="_blank">
 										<div class="cap">
-											<p class="products_gnb">ÀÌ¿ë±â¼ú</p>
+											<p class="products_gnb">ì´ìš©ê¸°ìˆ </p>
 										</div>
 								</a></li>
 								<li><a href="#" class="product_gobtn"> <img
-										src="/img/main/section2/products5.jpg" alt="Á¦Ç° ´º½º&½ºÅä¸®" class="pc"
+										src="/img/main/section2/products5.jpg" alt="ì œí’ˆ ë‰´ìŠ¤&ìŠ¤í† ë¦¬" class="pc"
 										target="_blank"> <img src="/img/main/section2/products5_m.jpg"
-										alt="Á¦Ç° ´º½º&½ºÅä¸®" class="mobile" target="_blank">
+										alt="ì œí’ˆ ë‰´ìŠ¤&ìŠ¤í† ë¦¬" class="mobile" target="_blank">
 										<div class="cap">
-											<p class="products_gnb">»ê¾÷º°</p>
+											<p class="products_gnb">ì‚°ì—…ë³„</p>
 										</div>
 								</a></li>
 							</ul>
 						</div>
-						<div class="learnmore_wrap"></div>
+						<div class="learnmore_wrap">
+						
+						</div>
 					</div>
 				</div>
 			</div>
@@ -183,7 +237,7 @@
 				<div class="container">
 					<div class="container_wrap">
 						<div class="subject">
-							<h1 class="title">Æ÷½ºÄÚ¹Ìµð¾î</h1>
+							<h1 class="title">í¬ìŠ¤ì½”ë¯¸ë””ì–´</h1>
 							<p class="orangebar">
 								<span></span>
 							</p>
@@ -197,19 +251,19 @@
 							<ul>
 								<li><a href="http://www.youtube.com/helloposco"
 									target="_blank" class="youtube_gobtn"> <img
-										src="/img/main/section3/youtube.png">
+										src="/img/youtube.png">
 								</a></li>
 								<li><a href="http://www.linkedin.com/company/posco"
 									target="_blank" class="linkedin_gobtn"> <img
-										src="/img/main/section3/linkedin.png">
+										src="/img/linkedin.png">
 								</a></li>
 								<li><a href="https://www.facebook.com/HELLOPOSCO"
 									target="_blank" class="facebook_gobtn"> <img
-										src="/img/main/section3/facebook.png">
+										src="/img/facebook.png">
 								</a></li>
 								<li><a href="https://www.instagram.com/hello_posco/"
 									target="_blank" class="insta_gobtn"> <img
-										src="/img/main/section3/insta.png">
+										src="/img/insta.png">
 								</a></li>
 							</ul>
 						</div>
@@ -220,11 +274,11 @@
 										src="/img/main/section3/media1_m.jpg" class="mobile">
 										<div class="cap">
 											<img src="/img/main/section3/cap_news.jpg" alt="newsroom" class="caption">
-											<img src="/img/main/section3/ico_eye.png" class="ico_media mobile-hide">
+											<img src="/img/ico_eye.png" class="ico_media mobile-hide">
 											<div>
 												<p class="date">Dec 29, 2020</p>
 												<p class="title">
-													2020³â Æ÷½ºÄÚÀÇ <br class="only-pc">ÇÑÇØ µ¹¾Æº¸±â <br
+													2020ë…„ í¬ìŠ¤ì½”ì˜ <br class="only-pc">í•œí•´ ëŒì•„ë³´ê¸° <br
 														class="only-pc"> <span class="mobile-hide"></span>
 												</p>
 											</div>
@@ -235,12 +289,12 @@
 										src="/img/main/section3/media2_m.jpg" class="mobile">
 										<div class="cap">
 											<img src="/img/main/section3/cap_news.jpg" alt="newsroom" class="caption">
-											<img src="/img/main/section3/ico_eye.png" class="ico_media mobile-hide">
+											<img src="/img/ico_eye.png" class="ico_media mobile-hide">
 											<div>
 												<p class="date">Dec 23, 2020</p>
 												<p class="title">
-													¶ß°Ì°í, ¹«°Ì°í, <br class="only-pc">½Ã²ô·¯¿î ÀÛ¾÷¡¦ <br
-														class="only-pc">ÀÌÁ¦ ·Îº¿¿¡°Ô ¸Ã°Ü¿ä! <br class="only-pc">
+													ëœ¨ê²ê³ , ë¬´ê²ê³ , <br class="only-pc">ì‹œë„ëŸ¬ìš´ ìž‘ì—…â€¦ <br
+														class="only-pc">ì´ì œ ë¡œë´‡ì—ê²Œ ë§¡ê²¨ìš”! <br class="only-pc">
 													<span class="mobile-hide"></span>
 												</p>
 											</div>
@@ -251,11 +305,11 @@
 										src="/img/main/section3/media3_m.jpg" class="mobile">
 										<div class="cap">
 											<img src="/img/main/section3/cap_ytb.jpg" alt="youtube" class="caption">
-											<img src="/img/main/section3/ico_movie.png" class="ico_media mobile-hide">
+											<img src="/img/ico_movie.png" class="ico_media mobile-hide">
 											<div>
 												<p class="date">Dec 23, 2020</p>
 												<p class="title">
-													ÀÏÇÏ¸ç ¹è¿ì¸ç ³ª´©¸ç, <br class="only-pc">Àç´ÉºÀ»ç´ÜÀÇ ÀÏ»ó ¼ÓÀ¸·Î <br
+													ì¼í•˜ë©° ë°°ìš°ë©° ë‚˜ëˆ„ë©°, <br class="only-pc">ìž¬ëŠ¥ë´‰ì‚¬ë‹¨ì˜ ì¼ìƒ ì†ìœ¼ë¡œ <br
 														class="only-pc">
 													<span class="mobile-hide"></span>
 												</p>
@@ -267,11 +321,11 @@
 										src="/img/main/section3/media4_m.jpg" class="mobile">
 										<div class="cap">
 											<img src="/img/main/section3/cap_ytb.jpg" alt="youtube" class="caption">
-											<img src="/img/main/section3/ico_movie.png" class="ico_media mobile-hide">
+											<img src="/img/ico_movie.png" class="ico_media mobile-hide">
 											<div>
 												<p class="date">Dec 29, 2020</p>
 												<p class="title">
-													¿ì¸® ¾ÆÀÌ°¡ ÀÚ¶ó´Â <br class="only-pc">Æ÷½ºÄÚ ¸¶À» <br
+													ìš°ë¦¬ ì•„ì´ê°€ ìžë¼ëŠ” <br class="only-pc">í¬ìŠ¤ì½” ë§ˆì„ <br
 														class="only-pc">
 													<span class="mobile-hide"></span>
 												</p>
@@ -290,7 +344,7 @@
 				<div class="container">
 					<div class="subject">
 						<h1 class="title">
-							Æ÷½ºÄÚ ¹®È­Çà»ç
+							í¬ìŠ¤ì½” ë¬¸í™”í–‰ì‚¬
 						</h1>
 						<p class="orangebar"><span></span></p>
 					</div>
@@ -298,7 +352,7 @@
 						<div class="culture_exp">
 							<div class="explanation">
 								<h2>Explanation</h2>
-								<p>Áö¿ªÁÖ¹ÎÀÇ È­ÇÕ°ú Ç³¿ä·Î¿î ¹®È­»ýÈ°À» À§ÇØ ¹®È­½Ã¼³À» Áö¿øÇÏ°í ¼öÁØ ³ôÀº °ø¿¬À» °³ÃÖÇÏ´Â µî ±â¾÷ ¸Þ¼¼³ª È°µ¿¿¡ Àû±Ø ¾ÕÀå¼­°í ÀÖ½À´Ï´Ù.
+								<p>ì§€ì—­ì£¼ë¯¼ì˜ í™”í•©ê³¼ í’ìš”ë¡œìš´ ë¬¸í™”ìƒí™œì„ ìœ„í•´ ë¬¸í™”ì‹œì„¤ì„ ì§€ì›í•˜ê³  ìˆ˜ì¤€ ë†’ì€ ê³µì—°ì„ ê°œìµœí•˜ëŠ” ë“± ê¸°ì—… ë©”ì„¸ë‚˜ í™œë™ì— ì ê·¹ ì•žìž¥ì„œê³  ìžˆìŠµë‹ˆë‹¤.
 								</p>
 							</div>
 							<div class="schedule">
@@ -312,16 +366,16 @@
 									<div class="bx-viewport">
 										<ul class="mySlider">
 											<li>
-												<a href="#" title="½ÅÁ¾ÄÚ·Î³ª ¹ÙÀÌ·¯½º È®»êÀ¸·Î ¹®È­Çà»ç °ø¿¬ Ãë¼Ò ¾È³» ¹Ù·Î°¡±â" tabindex="0">
+												<a href="#" title="ì‹ ì¢…ì½”ë¡œë‚˜ ë°”ì´ëŸ¬ìŠ¤ í™•ì‚°ìœ¼ë¡œ ë¬¸í™”í–‰ì‚¬ ê³µì—° ì·¨ì†Œ ì•ˆë‚´ ë°”ë¡œê°€ê¸°" tabindex="0">
 													<p class="culture_genre">Notice</p>
-													<p class="culture_title"><span>[°øÁö] ¹®È­Çà»ç Ãë¼Ò ¾È³»</span></p>
+													<p class="culture_title"><span>[ê³µì§€] ë¬¸í™”í–‰ì‚¬ ì·¨ì†Œ ì•ˆë‚´</span></p>
 													<img src="/img/main/section4/slide_img_10.jpg">
 												</a>
 											</li>
 											<li>
-												<a href="#" title="½ÅÁ¾ÄÚ·Î³ª ¹ÙÀÌ·¯½º È®»êÀ¸·Î ¹®È­Çà»ç °ø¿¬ Ãë¼Ò ¾È³» ¹Ù·Î°¡±â" tabindex="0">
+												<a href="#" title="ì‹ ì¢…ì½”ë¡œë‚˜ ë°”ì´ëŸ¬ìŠ¤ í™•ì‚°ìœ¼ë¡œ ë¬¸í™”í–‰ì‚¬ ê³µì—° ì·¨ì†Œ ì•ˆë‚´ ë°”ë¡œê°€ê¸°" tabindex="0">
 													<p class="culture_genre">Notice</p>
-													<p class="culture_title"><span>[°øÁö] ¹®È­Çà»ç Ãë¼Ò ¾È³»</span></p>
+													<p class="culture_title"><span>[ê³µì§€] ë¬¸í™”í–‰ì‚¬ ì·¨ì†Œ ì•ˆë‚´</span></p>
 													<img src="/img/main/section4/slide_img_10.jpg">
 												</a>
 											</li>
@@ -329,8 +383,8 @@
 									</div>
 								</div>
 								<div class="culture_controls">
-                                    <p class="prev_btn"><a href="#none"><img src="/img/main/section4/ic_prev.png" alt="prev"></a></p>
-                                    <p class="next_btn"><a href="#none"><img src="/img/main/section4/ic_next.png" alt="next"></a></p>
+                                    <p class="prev_btn"><a href="#none"><img src="/img/ic_prev.png" alt="prev"></a></p>
+                                    <p class="next_btn"><a href="#none"><img src="/img/ic_next.png" alt="next"></a></p>
                                 </div>
 							</div>
 						</div>
@@ -340,13 +394,13 @@
 								<a href="https://newsroom.posco.com/kr/2020%eb%85%84%ec%97%90%eb%8f%84-%ea%b8%b0%ec%97%85%ec%8b%9c%eb%af%bc-%ed%8f%ac%ec%8a%a4%ec%bd%94-%eb%ac%b8%ed%99%94%ed%96%89%ec%82%ac%ea%b0%80-%ec%97%ac%eb%9f%ac%eb%b6%84%ea%b3%bc-%ed%95%a8%ea%bb%98/" target="_blank">
                                     <img src="/img/main/section4/culture_news_m.jpg" alt="" class="newsimg_m">
                                     <h2 class="newsimg_m">Culture News</h2>
-                                    <p class="news_title">2020³â¿¡µµ ±â¾÷½Ã¹Î Æ÷½ºÄÚ ¹®È­Çà»ç°¡ ¿©·¯ºÐ°ú ÇÔ²² ÇÕ´Ï´Ù!</p>
+                                    <p class="news_title">2020ë…„ì—ë„ ê¸°ì—…ì‹œë¯¼ í¬ìŠ¤ì½” ë¬¸í™”í–‰ì‚¬ê°€ ì—¬ëŸ¬ë¶„ê³¼ í•¨ê»˜ í•©ë‹ˆë‹¤!</p>
                                     <img src="/img/main/section4/culture_news.jpg" alt="" class="newsimg_pc">
                                 </a>
 							</div>
 							<div class="culture_detail">
 								<h2>Detail Page</h2>
-                                <a href="/homepage/docs/kor6/jsp/prcenter/culture/s91c2000010m.jsp" title="¹®È­Çà»ç ¸ÞÀÎÆäÀÌÁö ¹Ù·Î°¡±â"><p>»ó¼¼ÆäÀÌÁö º¸·¯°¡±â</p></a>
+                                <a href="/homepage/docs/kor6/jsp/prcenter/culture/s91c2000010m.jsp" title="ë¬¸í™”í–‰ì‚¬ ë©”ì¸íŽ˜ì´ì§€ ë°”ë¡œê°€ê¸°"><p>ìƒì„¸íŽ˜ì´ì§€ ë³´ëŸ¬ê°€ê¸°</p></a>
 							</div>
 						</div>
 						<div class="culture_back"></div>
@@ -361,7 +415,7 @@
 					<div class="subject">
 						<h1 class="title">About POSCO</h1>
 						<p class="orangebar"><span></span></p>
-						<p class="text">Æ÷½ºÄÚ´Â '´õºÒ¾î ÇÔ²² ¹ßÀüÇÏ´Â ±â¾÷½Ã¹Î' ÀÌ¶ó´Â °æ¿µÀÌ³äÀ» ¹ÙÅÁÀ¸·Î ½Å·Ú¿Í Á¸°æ ¹Þ´Â ¿µ¼Ó±â¾÷À¸·Î ¹ßÀüÇØ ³ª°¥ °ÍÀÔ´Ï´Ù.</p>
+						<p class="text">í¬ìŠ¤ì½”ëŠ” 'ë”ë¶ˆì–´ í•¨ê»˜ ë°œì „í•˜ëŠ” ê¸°ì—…ì‹œë¯¼' ì´ë¼ëŠ” ê²½ì˜ì´ë…ì„ ë°”íƒ•ìœ¼ë¡œ ì‹ ë¢°ì™€ ì¡´ê²½ ë°›ëŠ” ì˜ì†ê¸°ì—…ìœ¼ë¡œ ë°œì „í•´ ë‚˜ê°ˆ ê²ƒìž…ë‹ˆë‹¤.</p>
 					</div>
 					<div class="about_list">
 						<ul>
@@ -369,8 +423,8 @@
 								<img src="/img/main/section5/about1.png" alt="" class="pc">
 								<img src="/img/main/section5/about1_m.png" alt="" class="mobile">
 								<div class="cap">
-									<p class="title mobile-hide">È¸»ç¼Ò°³</p>
-									<p class="text only-mobile-hide">¼¼°è¿¡¼­ °¡Àå <br>°æÀï·ÂÀÖ´Â Ã¶°­È¸»ç·Î¼­ <br>ÀÎ·ù¹ßÀü¿¡ ±â¿©ÇÕ´Ï´Ù.</p>
+									<p class="title mobile-hide">íšŒì‚¬ì†Œê°œ</p>
+									<p class="text only-mobile-hide">ì„¸ê³„ì—ì„œ ê°€ìž¥ <br>ê²½ìŸë ¥ìžˆëŠ” ì² ê°•íšŒì‚¬ë¡œì„œ <br>ì¸ë¥˜ë°œì „ì— ê¸°ì—¬í•©ë‹ˆë‹¤.</p>
 									<a href="#"><img src="/img/main/section5/viewmore.png" alt="View more" class="link"></a>
 								</div>
 							</li>
@@ -378,8 +432,8 @@
 								<img src="/img/main/section5/about2.png" alt="" class="pc">
 								<img src="/img/main/section5/about2_m.png" alt="" class="mobile">
 								<div class="cap">
-									<p class="title mobile-hide">À±¸®°æ¿µ</p>
-									<p class="text only-mobile-hide">¿Ã¹Ù¸¥ ÀÏÀ» <br>¿Ã¹Ù¸£°Ô ÇÏ´Â °Í, <br>¹Ù·Î Æ÷½ºÄÚ°¡ ÇÏ´Â °ÍÀÔ´Ï´Ù.</p>
+									<p class="title mobile-hide">ìœ¤ë¦¬ê²½ì˜</p>
+									<p class="text only-mobile-hide">ì˜¬ë°”ë¥¸ ì¼ì„ <br>ì˜¬ë°”ë¥´ê²Œ í•˜ëŠ” ê²ƒ, <br>ë°”ë¡œ í¬ìŠ¤ì½”ê°€ í•˜ëŠ” ê²ƒìž…ë‹ˆë‹¤.</p>
 									<a href="#"><img src="/img/main/section5/viewmore.png" alt="View more" class="link"></a>
 								</div>
 							</li>
@@ -387,8 +441,8 @@
 								<img src="/img/main/section5/about4.png" alt="" class="pc">
 								<img src="/img/main/section5/about4_m.png" alt="" class="mobile">
 								<div class="cap">
-									<p class="title mobile-hide">¾ÈÀüÈ¯°æ °æ¿µ</p>
-									<p class="text only-mobile-hide">ÀÚÀ²Àû ¾ÈÀü¹®È­¿Í <br>»ê¾÷º¸°Ç ¾÷¹«¸¦<br>ÁßÁ¡ ÃßÁøÇÏ°í ÀÖ½À´Ï´Ù.</p>
+									<p class="title mobile-hide">ì•ˆì „í™˜ê²½ ê²½ì˜</p>
+									<p class="text only-mobile-hide">ìžìœ¨ì  ì•ˆì „ë¬¸í™”ì™€ <br>ì‚°ì—…ë³´ê±´ ì—…ë¬´ë¥¼<br>ì¤‘ì  ì¶”ì§„í•˜ê³  ìžˆìŠµë‹ˆë‹¤.</p>
 									<a href="#"><img src="/img/main/section5/viewmore.png" alt="View more" class="link"></a>
 								</div>
 							</li>
@@ -398,18 +452,18 @@
 			</div>
 		</section>
 	</div>
-	<!-- content ³¡ -->
-	<!-- scroll ÀÌ¹ÌÁö -->
+	<!-- content ë -->
+	<!-- scroll ì´ë¯¸ì§€ -->
 	<div class="down">
 		<img src="/img/main/section1/drag-down.png" />
 	</div>
 	<div class="dot_menu">
 		<ul>
-			<li><a href="#visual" title="¸ÞÀÎ ºñÁÖ¾ó ¹Ù·Î°¡±â"></a></li>
-			<li><a href="#products" title="Æ÷½ºÄÚ Á¦Ç° ¹Ù·Î°¡±â"></a></li>
-			<li><a href="#media" title="Æ÷½ºÄÚ ¹Ìµð¾î ¹Ù·Î°¡±â"></a></li>
-			<li><a href="#culture" title="Æ÷½ºÄÚ ¹®È­Çà»ç ¹Ù·Î°¡±â"></a></li>
-			<li><a href="#about" title="About POSCO ¹Ù·Î°¡±â"></a></li>
+			<li><a href="#visual" title="ë©”ì¸ ë¹„ì£¼ì–¼ ë°”ë¡œê°€ê¸°"></a></li>
+			<li><a href="#products" title="í¬ìŠ¤ì½” ì œí’ˆ ë°”ë¡œê°€ê¸°"></a></li>
+			<li><a href="#media" title="í¬ìŠ¤ì½” ë¯¸ë””ì–´ ë°”ë¡œê°€ê¸°"></a></li>
+			<li><a href="#culture" title="í¬ìŠ¤ì½” ë¬¸í™”í–‰ì‚¬ ë°”ë¡œê°€ê¸°"></a></li>
+			<li><a href="#about" title="About POSCO ë°”ë¡œê°€ê¸°"></a></li>
 
 		</ul>
 	</div>

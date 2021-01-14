@@ -150,7 +150,7 @@ section.posco_section{
 }
 /* section 3 */
 #media{
-	background: url(/img/main/posco_back.jpg) no-repeat;
+	background: url(/img/posco_back.jpg) no-repeat;
     background-size: cover;
     border-bottom: 1px solid #eaeaea;
 }
@@ -294,7 +294,7 @@ section.posco_section{
     width: 96px;
     height: 10px;
     margin-left: 5px;
-    background: url(/img/main/section3/arrow.png) no-repeat;
+    background: url(/img/arrow.png) no-repeat;
 }
 .posco_section .media_wrap .container .media_list ul li > a > img {
     width: 100%;
@@ -507,7 +507,7 @@ section.posco_section{
     background-position: bottom;
 }
 .posco_section .culture_wrap .container .culture_cont .culture_info .culture_detail a p {
-    background: url(/img/main/section4/plus.png) no-repeat;
+    background: url(/img/plus.png) no-repeat;
     background-position: 95% 50%;
     font-size: 14px;
     color: #333;
@@ -516,7 +516,7 @@ section.posco_section{
 }
 /* section 5 */
 #about {
-    background: url(/img/main/posco_back.jpg) no-repeat;
+    background: url(/img/posco_back.jpg) no-repeat;
     background-size: cover;
 }
 .posco_section .about_wrap .container {

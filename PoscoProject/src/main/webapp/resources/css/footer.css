@@ -29,4 +29,198 @@ footer {
 }
 
 
+/* footer container */
+
+footer .container .sitemap dl {
+    width: 40%;
+    float: left;
+    margin-top: 30px;
+}
+footer .container .sitemap dl dt {
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 25px;
+    float: left;
+    width: 100%;
+}
+footer .container .sitemap dl dd {
+    float: left;
+    width: 50%;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+footer .container .sitemap dl.customer dd {
+    width: 100%;
+}
+footer .container .sitemap dl dd img {
+    margin-left: 8px;
+}
 /*  */
+footer .container .sitemap dl.promoch {
+    width: 20%;
+}
+footer .container .sitemap dl.promoch dd {
+    width: 100%;
+}
+footer .container .sitemap dl.customer {
+    width: 20%;
+}
+footer .container .sitemap dl:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+footer .container .right-ui {
+    width: 20%;
+    float: right;
+    margin-top: 30px;
+}
+footer .container .right-ui a {
+    display: block;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: 700;
+}
+footer .container .right-ui a img {
+    margin-left: 10px;
+}
+footer #posco-group {
+    width: 100%;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 300px;
+    border-top: 1px solid #ccc;
+    padding-bottom: 50px;
+    display: none;
+    z-index: 10;
+}
+footer #posco-group .container {
+    position: relative;
+}
+
+
+footer #posco-group .container .title {
+    font-size: 26px;
+    color: #333;
+    font-weight: 700;
+    padding-top: 50px;
+}
+footer #posco-group .container .text {
+    font-size: 15px;
+    line-height: 24px;
+    margin-top: 20px;
+}
+footer #posco-group .container .table-layout {
+    margin-top: 40px;
+    display: table;
+    width: 100%;
+}
+footer #posco-group .container .table-layout .col {
+    display: table-cell;
+    width: 25%;
+}
+footer #posco-group .container .table-layout .col dt {
+    margin-bottom: 20px;
+}
+footer #posco-group .container .table-layout .col dt a {
+    font-size: 16px;
+    color: #005891;
+    font-weight: 700;
+}
+
+footer #posco-group .container .table-layout .col dd {
+    margin-bottom: 10px;
+}
+footer #posco-group .container .table-layout .col dd a {
+    font-size: 15px;
+    color: #333;
+}
+footer #posco-group .container .table-layout .col dd a img {
+    margin-left: 8px;
+}
+footer #posco-group .container .group-close {
+    width: 21px;
+    height: 21px;
+    display: block;
+    position: absolute;
+    top: 50px;
+    right: 15px;
+    background: url(/img/header_close.png) no-repeat center;
+}
+/* location */
+footer .container .right-ui dl.location {
+    width: 100%;
+}
+footer .container .right-ui dl.location dt {
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+footer .container .right-ui dl.location dd {
+    width: 100%;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+footer .container .right-ui dl.location dd a {
+    display: block;
+    margin-bottom: 0;
+    color: #666;
+    font-weight: 400;
+}
+/* container foot */
+footer .container .wrap {
+    position: relative;
+}
+footer .container .foot-links {
+    padding-top: 30px;
+}
+footer .container .foot-links div:last-of-type, footer .container .foot-links div li:last-of-type {
+    border: none;
+    padding-right: 0;
+    margin-right: 0;
+}
+footer .container .foot-links div li {
+    float: left;
+}
+footer .container .foot-links div li a {
+    display: inline-block;
+    padding-right: 10px;
+    margin-right: 10px;
+    border-right: 1px solid #dedede;
+}
+footer .container .foot-links:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+footer .container .address {
+    margin-top: 20px;
+}
+footer .container .address li {
+    float: left;
+}
+footer .container .address li:last-child {
+    margin-left: 10px;
+    padding-left: 10px;
+    border-left: 1px solid #dedede;
+}
+footer .container .address:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+footer .container .copyright {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+footer .container .webacc {
+    position: absolute;
+    right: 0;
+    bottom: 30px;
+}
+
+/* mobile Ã³¸® */
+footer .mobile-hide {
+    display: inline-block;
+}
