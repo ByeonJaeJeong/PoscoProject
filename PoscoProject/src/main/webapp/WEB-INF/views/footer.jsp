@@ -1,7 +1,18 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <script>
+/* Posco-group open event  */
+function groupOpen(){
+	$("#posco-group").attr("style","display:block");
+}
 	
+function groupClose(){
+	$("#posco-group").attr("style","display:none");
+}
+		
+	
+
+
 </script>
 <link rel="stylesheet" href="/css/footer.css">
 <footer class="container-full">
@@ -101,7 +112,7 @@
 			</dl>
 		</div>
 		<div class="right-ui">
-			<a href="#" class="group-open">국내그룹사 바로가기<img
+			<a href="javascript:groupOpen()" class="group-open">국내그룹사 바로가기<img
 				src="/img/footer/footer_ico_plus.png" alt=""></a>
 			<div id="posco-group" class="inter-pannel">
 				<div class="container" data-focus="modal-product"
@@ -303,7 +314,7 @@
 							</dl>
 						</div>
 					</div>
-					<a href="#" title="포스코 국내그룹사 바로가기 닫기" class="group-close"
+					<a href="javascript:groupClose()" title="포스코 국내그룹사 바로가기 닫기" class="group-close"
 						data-focus="modal-product-close" data-focus-next="modal-product"></a>
 				</div>
 			</div>

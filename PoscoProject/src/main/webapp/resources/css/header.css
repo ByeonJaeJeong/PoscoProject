@@ -89,9 +89,12 @@ header #util{
     right: 0;
     top: 30px;
 }
+header #util > div.login {
+    margin-left: 20px;
+}
 header #util>div{
 	float: left;
-	margin-left: 20px;
+	
 }
 header #util>div a{
 	width: 20px;

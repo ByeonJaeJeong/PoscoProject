@@ -27,6 +27,27 @@ body {
     top: 50%;
     text-align: center;
 }
+#visual .video_txt p {
+    font-weight: 800;
+    font-size: 60px;
+    color: #fff;
+    line-height: 50px;
+}
+
+#visual .video_txt img {
+    margin-bottom: 10px;
+}
+#visual .video_txt .video_btn > a > p {
+    float: left;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+#visual .video_txt .video_btn > a > p > img {
+    margin-right: 10px;
+}
+
 section.posco_section{
 	width: 100%;
     height: 100%;

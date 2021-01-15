@@ -3,20 +3,152 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script type="text/javascript"
-	src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+<!-- <script type="text/javascript"
+	src="http://code.jquery.com/jquery-1.12.4.min.js"></script> -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 <link href="/css/main.css" rel="stylesheet">
 <meta charset="UTF-8">
 <title>POSCO | 더불어 함께 발전하는 기업시민</title>
 
 </head>
 <body>
+	<jsp:include page="ribbon.jsp"></jsp:include>
 	<jsp:include page="header.jsp"></jsp:include>
 	<!--header 삽입  -->
 
 	<!-- script -->
 	<script type="text/javascript">
 		/*  scroll event */
+		//section위에서 마우스 휠을 움직이면
+	$("section").on("mousewheel",function(event,delta){    
+		
+	//마우스 휠을 올렸을때	
+	if (delta > 0) {  
+	//변수 prev에 현재 휠을 움직인 section에서 이전 section의 offset().top위치 저장
+		var prev = $(this).prev().offset().top;
+		//문서 전체를 prev에 저장된 위치로 이동
+		$("html,body").stop().animate({"scrollTop":prev},1000);
+			 
+		//마우스 휠을 내렸을때	 
+			}else if (delta < 0) {  
+			//변수 next에 현재 휠을 움직인 section에서 다음 section의 offset().top위치 저장
+			var next = $(this).next().offset().top;
+			//문서 전체를 next에 저장된 위치로 이동
+			$("html,body").stop().animate({"scrollTop":next},1000);                                         
+		}
+	});
+	
+////////////////////Popup Ribbon     ////////////////////
+			
+			var ribbon = 80;
+
+			//페이지 로드 후 배너 안보이게 removeclass 
+			$("body").removeClass("ribbon-on");
+
+			//페이지 업,다운 스크롤 시 헤더 transition 추가/삭제
+			var lastScroll = 0;
+			$(window).scroll(function(event){
+				//Sets the current scroll position
+				var st = $(this).scrollTop();
+				//Determines up-or-down scrolling
+				if (st > lastScroll){
+					//스크롤 다운할 때
+					$("header").css({"transition":"none"});
+				}
+				else {
+					//스크롤 업 할때
+					$("header").css({"transition":'Top .5s'});
+				}
+				//Updates scroll position
+				lastScroll = st;
+			});
+
+			
+			$(".ribbon button").click(function(){
+				$("header").css({"transition":"none"});
+				$(".ribbon").slideUp(500,"easeInOutExpo");
+				$("header").animate({"top":0},500,"easeInOutExpo");
+				$("body").removeClass("ribbon-on");
+				ribbon = 0;
+				if ($("#ribbon-chk").is(":checked")) setCookie("ribbonBanner", "done", 1);
+			});
+
+			//오늘 하루 열지 않음  해당 쿠키가 있으면 헤더 안움직이게
+			cookiedata = document.cookie;
+			if ( cookiedata.indexOf("ribbonBanner=done") < 0 ){
+
+			setTimeout(function(){
+				$("body").addClass("ribbon-on");
+				$(".ribbon").addClass("on");
+				$("header").css({"transition":'Top .5s'});
+			}, 500);
+			}
+			//해당 쿠키가 없으면 헤더 움직이게
+			else {
+			   $("body").removeClass("ribbon-on");
+			}
+
+			
+			$(window).scroll(function(){
+				
+				var st = $(window).scrollTop();
+				
+				if ( $("body").hasClass("ribbon-on") ) {
+					
+					if(st < ribbon){
+						$("header").css({"top":ribbon-st});
+						$("header #gnb .menu li .bg").css({"top":ribbon-st + 80});
+						$("header #util .search-act").css({"top":ribbon-st + 80});
+					}else{
+						$("header").css({"top":0});
+						$("header #gnb .menu li .bg").css({"top":80});
+						$("header #util .search-act").css({"top":80});
+					}
+					
+				} else {
+					
+					$("header").css({"top":0});
+					$("header #gnb .menu li .bg").css({"top":80});
+					$("header #util .search-act").css({"top":80});
+				}
+			});
+		    
+		    // Ribbon banner Slide 띠배너 슬라이드
+		    var loveSlide=$(".loveSlide").bxSlider({
+		        mode:"horizontal",
+		        speed:1500,
+		        pause: 4500,
+		        pager:false,
+		        moveSlides:1,
+		        slideWidth:"716",
+		        minSlides:1,
+		        maxSlides:1,
+		        infiniteLoop:true,
+		        slideMargin:0,
+		        auto:true,
+		        autoHover:true,
+		        controls:false,
+		        autoControls:false,
+		        autoControlsCombine:false,
+		    });
+
+		    // 띠배너 웹 접근성
+		    $('.loveSlide a').focusin(function () {
+		        mySlider.stopAuto();
+		    });
+
+		    $(".prev").on("click",function(){
+		        loveSlide.goToPrevSlide();
+		        return false;
+		    });
+
+		    $(".next").on("click",function(){
+		        loveSlide.goToNextSlide();
+		        return false;
+		    });
+			/*  */
 		window.onload = function() {
 			var elm = ".posco_section";
 			$(elm).each(function(index) {
@@ -52,7 +184,7 @@
 							}
 						}
 					}
-
+					
 					// 화면 이동 0.8초(800)
 					$("html,body").stop().animate({
 						scrollTop : moveTop + 'px'
@@ -92,56 +224,7 @@
 				$(".top-btn").fadeIn();
 			}
 		});
-///////////////////// 문화행사(공연안내) 슬라이드 ////////////////////////
 
-		  var mySlider=$(".mySlider").bxSlider({
-		      mode:"horizontal",
-		        speed:700,
-		        pager:false,
-		        moveSlides:1,
-		        slideWidth:"500%",
-		        minSlides:1,
-		        maxSlides:1,
-		        infiniteLoop:true,
-		        slideMargin:0,
-		        auto:false,
-		        autoHover:true,
-		        controls:false,
-		        autoControls:true,
-		        autoControlsCombine:true,
-
-		      	// 웹접근성 추가
-			onSliderLoad: function(){
-				$(".mySlider .bx-clone").find("a").prop("tabIndex","-1");
-			},
-			onSlideAfter: function($slideElement, oldIndex, newIndex){
-		        if(newIndex == 0) {
-		                $(".mySlider li").find("a").prop("tabIndex","0");
-		                $(".mySlider .bx-clone").find("a").prop("tabIndex","-1");
-		            } else {
-		                for(var i = 0; i < 4; i++ ) {
-		                    $('.mySlider li').eq(oldIndex + i).find('a').attr('tabindex' , -1);
-		                    $('.mySlider li').eq((newIndex + 2) + i).find('a').attr('tabindex' , 0);
-		                }
-		            }
-			}
-		  });
-		
-		
-		// 웹 접근성
-		$('.mySlider a').focusin(function () {
-			mySlider.stopAuto();
-		});
-
-		  $(".prev_btn").on("click",function(){
-		  mySlider.goToPrevSlide();
-		  return false;
-		  });
-
-		  $(".next_btn").on("click",function(){
-		  mySlider.goToNextSlide();
-		  return false;
-		  });
 
 		
 		
@@ -158,6 +241,10 @@
 					<img src="/img/main/section1/slogan.png"
 						alt="Challenge Together, Change Tomorrow 기업, 시민이 되다.함께, 미래가 되다">
 				</p>
+				<a href="http://challengetochange.posco.com" target="_blank" class="posco_movie_btn" data-id="NJwsPhG2NGI" title="새창열기" data-focus="on">
+						<!--p class="posco_movie_title">POSCO Group PR Movie</p-->
+                        <p class="posco_movie_title"><img src="/img/main/section1/more_view.png" alt="함께 만드는 기업시민, 자세히 보기"></p>
+					</a>
 			</div>
 		</section>
 		<!-- section products -->
