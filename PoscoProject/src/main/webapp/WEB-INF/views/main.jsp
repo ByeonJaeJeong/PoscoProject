@@ -4,10 +4,11 @@
 <html>
 <head>
 <!-- <script type="text/javascript"
-	src="http://code.jquery.com/jquery-1.12.4.min.js"></script> -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+	src="http://code.jquery.com/jquery-1.12.4.min.js"></script> --><link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
 <link href="/css/main.css" rel="stylesheet">
 <meta charset="UTF-8">
 <title>POSCO | 더불어 함께 발전하는 기업시민</title>
@@ -20,26 +21,7 @@
 
 	<!-- script -->
 	<script type="text/javascript">
-		/*  scroll event */
-		//section위에서 마우스 휠을 움직이면
-	$("section").on("mousewheel",function(event,delta){    
-		
-	//마우스 휠을 올렸을때	
-	if (delta > 0) {  
-	//변수 prev에 현재 휠을 움직인 section에서 이전 section의 offset().top위치 저장
-		var prev = $(this).prev().offset().top;
-		//문서 전체를 prev에 저장된 위치로 이동
-		$("html,body").stop().animate({"scrollTop":prev},1000);
-			 
-		//마우스 휠을 내렸을때	 
-			}else if (delta < 0) {  
-			//변수 next에 현재 휠을 움직인 section에서 다음 section의 offset().top위치 저장
-			var next = $(this).next().offset().top;
-			//문서 전체를 next에 저장된 위치로 이동
-			$("html,body").stop().animate({"scrollTop":next},1000);                                         
-		}
-	});
-	
+	$(function(){
 ////////////////////Popup Ribbon     ////////////////////
 			
 			var ribbon = 80;
@@ -149,11 +131,43 @@
 		        return false;
 		    });
 			/*  */
+			
+				/* section height */
+		var ht = $(window).height();	
+	//브라우저의 높이값을 section의 높이값으로 지정
+	$("section").height(ht);
+	
+	//브라우저가 리사이즈 될 때마다 브라우저와 section의 높이값을 갱신
+	$(window).on("resize",function(){
+		var ht = $(window).height();	
+		$("section").height(ht);
+	});	
+	//section위에서 마우스 휠을 움직이면	
+	 $("section").on("mousewheel",function(event,delta){    
+		
+	//마우스 휠을 올렸을때	
+	if (delta > 0) {  
+	//변수 prev에 현재 휠을 움직인 section에서 이전 section의 offset().top위치 저장
+		var prev = $(this).prev().offset().top;
+		//문서 전체를 prev에 저장된 위치로 이동
+		$("html,body").stop().animate({"scrollTop":prev},1000);
+			 
+		//마우스 휠을 내렸을때	 
+			}else if (delta < 0) {  
+			//변수 next에 현재 휠을 움직인 section에서 다음 section의 offset().top위치 저장
+			var next = $(this).next().offset().top;
+			//문서 전체를 next에 저장된 위치로 이동
+			$("html,body").stop().animate({"scrollTop":next},1000);
+			
+		}
+	});		 
+			
 		window.onload = function() {
 			var elm = ".posco_section";
 			$(elm).each(function(index) {
 				// 개별적으로 Wheel 이벤트 적용
 				$(this).on("mousewheel DOMMouseScroll", function(e) {
+					
 					e.preventDefault();
 					var delta = 0;
 					if (!event)
@@ -184,15 +198,7 @@
 							}
 						}
 					}
-					
-					// 화면 이동 0.8초(800)
-					$("html,body").stop().animate({
-						scrollTop : moveTop + 'px'
-					}, {
-						duration : 800,
-						complete : function() {
-						}
-					});
+
 				});
 			});
 		}
@@ -224,7 +230,7 @@
 				$(".top-btn").fadeIn();
 			}
 		});
-
+	});
 
 		
 		
