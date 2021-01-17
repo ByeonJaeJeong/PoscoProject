@@ -9,12 +9,13 @@
 <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
 <link href="/css/main.css" rel="stylesheet">
 <meta charset="UTF-8">
 <title>POSCO | 더불어 함께 발전하는 기업시민</title>
 
 </head>
-<body>
+<body class="main">
 	<jsp:include page="ribbon.jsp"></jsp:include>
 	<jsp:include page="header.jsp"></jsp:include>
 	<!--header 삽입  -->
@@ -49,12 +50,18 @@
 
 			
 			$(".ribbon button").click(function(){
+				console.log("실행1");
 				$("header").css({"transition":"none"});
+				console.log("실행2");
 				$(".ribbon").slideUp(500,"easeInOutExpo");
+				console.log("실행3");
 				$("header").animate({"top":0},500,"easeInOutExpo");
+				console.log("실행4");
 				$("body").removeClass("ribbon-on");
 				ribbon = 0;
-				if ($("#ribbon-chk").is(":checked")) setCookie("ribbonBanner", "done", 1);
+				if ($("#ribbon-chk").is(":checked")){
+					setCookie("ribbonBanner", "done", 1);
+				}
 			});
 
 			//오늘 하루 열지 않음  해당 쿠키가 있으면 헤더 안움직이게
@@ -231,7 +238,13 @@
 			}
 		});
 	});
-
+	/* 쿠키 생성 script */
+	function setCookie(cname, cvalue, exdays) {
+	    var d = new Date();
+	    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+	    var expires = "expires="+ d.toUTCString();
+	    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+	}
 		
 		
 	</script>
