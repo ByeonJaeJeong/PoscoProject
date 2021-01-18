@@ -245,7 +245,66 @@
 	    var expires = "expires="+ d.toUTCString();
 	    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 	}
-		
+	
+	// 접근성 관련 포커스 강제 이동
+	function accessibilityFocus() {
+	  
+	  $(document).on('keydown', '[data-focus-prev], [data-focus-next]', function(e){
+	    var next = $(e.target).attr('data-focus-next'),
+	        prev = $(e.target).attr('data-focus-prev'),
+	        target = next || prev || false;
+	    
+	    if(!target || e.keyCode != 9) {
+	      return;
+	    }
+	    
+	    if( (!e.shiftKey && !!next) || (e.shiftKey && !!prev) ) {
+	      setTimeout(function(){
+	        $('[data-focus="' + target + '"]').focus();
+	      }, 1);
+	    }
+	    
+	  });
+	  
+	}
+
+	function tooltip() {
+	  var openBtn = '[data-tooltip]',
+	      closeBtn = '.quick-close';
+	  
+	  function getTarget(t) {
+	    return $(t).attr('id');
+	  }
+	  
+	  function open(t) {
+	    var showTarget = $('[data-focus="modal-' + t + '"]');
+	    showTarget.show().focus();
+	    showTarget.find('.quick-close').data('activeTarget', t);
+	  }
+	  
+	  function close(t) {
+	    var activeTarget = $('[data-focus="modal-' + t + '"]');
+	    activeTarget.hide();
+	    $('[data-tooltip="' + t + '"]').focus();
+	  }
+	  
+	  $(document)
+	    .on('click', openBtn, function(e){
+	      e.preventDefault();
+	      open(getTarget(e.target));
+	    })
+	    .on('click', closeBtn, function(e) {
+	      e.preventDefault();
+	      close($(this).data('activeTarget'));
+	    })
+	  
+	}
+	$(document).ready(function(){
+		  
+		  tooltip();
+		  accessibilityFocus();
+		  
+		});	
 		
 	</script>
 	<!-- script -->

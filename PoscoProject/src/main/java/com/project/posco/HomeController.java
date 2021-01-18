@@ -18,13 +18,21 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class HomeController {
 	
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
-	
+		
 	/**
 	 * Simply selects the home view to render by returning its name.
 	 */
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home(Locale locale, Model model) {
 		logger.info("정상실행 완료! main.페이지로 이동");
+		
+		
+		
+		return "main";
+	}
+	@RequestMapping(value = "/posco" , method = RequestMethod.GET)
+	public String mainPage(Locale locale, Model model) {
+		logger.info("정상실행 완료! /posco 메인.페이지로 이동");
 		
 		
 		

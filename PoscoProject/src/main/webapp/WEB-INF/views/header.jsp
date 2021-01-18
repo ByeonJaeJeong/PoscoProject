@@ -26,7 +26,20 @@
 					<a href="#">로그인</a>
 				</div>
 				<div class="quick">
-					<a href="#" id="quick">자주찾는 메뉴</a>
+					<a href="#" id="quick" data-tooltip="quick">자주찾는 메뉴</a>
+				</div>
+				<div class="quick-act" data-focus="modal-quick" data-focus-prev="modal-quick-close" tabindex=0 >
+					<div class="quick-wrap">
+						<div class="top">자주찾는 메뉴</div>
+						<ul>
+	                    <li><a href="#" target="_blank" class="newsroom_fav">포스코 뉴스룸</a></li>
+						<li><a href="#">문화행사</a></li>
+						<li><a href="#">견학신청</a></li>
+						<li><a href="#" target="_blank">인재채용</a></li>
+						<li><a href="#" target="_blank" class="product_fav">제품검색</a></li>
+	                	</ul>
+	                	<a href="#" class="quick-close" data-focus="modal-quick-close" data-focus-next="modal-quick">자주찾는메뉴 닫기</a>
+					</div>
 				</div>
 				<div class="language mobile-hide">
 					<a href="#" id="language">language</a>

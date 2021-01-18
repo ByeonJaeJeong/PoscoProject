@@ -122,6 +122,88 @@ header #util .quick{
     right: 0;
     top: -30px;
 }
+/*  quick-act */
+
+header #util .quick-act {
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100vh;
+    display: none;
+    z-index: 10;
+}
+header #util .quick-act .quick-wrap {
+    width: 370px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+}
+header #util .quick-act .quick-wrap .top {
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+    text-indent: 20px;
+    line-height: 80px;
+    background: #008bca;
+}
+header #util .quick-act .quick-wrap .quick-close {
+    width: 80px;
+    height: 80px;
+    background: url(/img/header/quick_close.jpg) no-repeat center/contain;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+header #util .quick-act .quick-wrap ul {
+    height: calc(100vh - 80px);
+    width: 100%;
+}
+header #util .quick-act .quick-wrap ul li {
+    height: calc(100% / 5);
+    display: table;
+    width: 100%;
+}
+header #util .quick-act .quick-wrap ul li:nth-child(1) {
+    background: url(/img/header/quick3.jpg) no-repeat center/cover;
+}
+header #util .quick-act .quick-wrap ul li:nth-child(2) {
+    background: url(/img/header/quick4.jpg) no-repeat center/cover;
+}
+header #util .quick-act .quick-wrap ul li:nth-child(3) {
+    background: url(/img/header/quick2.jpg) no-repeat center/cover;
+}
+header #util .quick-act .quick-wrap ul li:nth-child(4) {
+    background: url(/img/header/quick5.jpg) no-repeat center/cover;
+}
+header #util .quick-act .quick-wrap ul li:nth-child(5) {
+    background: url(/img/header/quick1.jpg) no-repeat center/cover;
+}
+header #util .quick-act .quick-wrap ul li a {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    display: table-cell;
+    text-indent: 0;
+    vertical-align: middle;
+}
+header #util .quick-act .quick-wrap ul li a:hover {
+    border: 5px #fff solid;
+}
+header #util .quick-act .quick-wrap ul li a:hover:after {
+    display: inline-block;
+    width: 24px;
+    height: 18px;
+    content: "";
+    margin-left: 5px;
+    background: url(/img/header/quick_arrow.png) no-repeat center/contain;
+}
+/* quick-act 끝 */
 header #all-menu{
 	position: absolute;
     right: 204px;
