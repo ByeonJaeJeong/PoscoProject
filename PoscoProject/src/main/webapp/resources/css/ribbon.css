@@ -12,6 +12,9 @@
     transition: .5s;
     background-color: #cbe5f7;
 }
+.ribbon-on header {
+    top: 80px;
+}
 .ribbon .loveWrap {
     width: 716px;
     margin: 0 auto;

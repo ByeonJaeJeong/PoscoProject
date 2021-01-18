@@ -26,7 +26,7 @@
 					<a href="#">로그인</a>
 				</div>
 				<div class="quick">
-					<a href="#" id="quick" data-tooltip="quick">자주찾는 메뉴</a>
+					<a href="#" id="quick" data-tooltip="modal-quick">자주찾는 메뉴</a>
 				</div>
 				<div class="quick-act" data-focus="modal-quick" data-focus-prev="modal-quick-close" tabindex=0 >
 					<div class="quick-wrap">

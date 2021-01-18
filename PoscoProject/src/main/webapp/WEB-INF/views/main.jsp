@@ -4,7 +4,7 @@
 <html>
 <head>
 <!-- <script type="text/javascript"
-	src="http://code.jquery.com/jquery-1.12.4.min.js"></script> --><link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+	src="http://code.jquery.com/jquery-1.12.4.min.js"></script> -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
@@ -106,27 +106,28 @@
 		    
 		    // Ribbon banner Slide 띠배너 슬라이드
 		    var loveSlide=$(".loveSlide").bxSlider({
-		        mode:"horizontal",
-		        speed:1500,
-		        pause: 4500,
-		        pager:false,
-		        moveSlides:1,
-		        slideWidth:"716",
-		        minSlides:1,
-		        maxSlides:1,
-		        infiniteLoop:true,
-		        slideMargin:0,
-		        auto:true,
-		        autoHover:true,
-		        controls:false,
-		        autoControls:false,
-		        autoControlsCombine:false,
+		    	mode:"horizontal",
+		    	        speed:1500,
+		    	        pause:4500,
+		    	        pager:false,
+		    	        moveSlides:1,
+		    	        slideWidth:"716",
+		    	        minSlides:1,
+		    	        maxSlides:1,
+		    	        infiniteLoop:true,
+		    	        slideMargin:0,
+		    	        auto:true,
+		    	        autoHover:true,
+		    	        controls:false,
+		    	        autoControls:false,
+		    	        autoControlsCombine:false,
+		    	        
 		    });
 
 		    // 띠배너 웹 접근성
-		    $('.loveSlide a').focusin(function () {
-		        mySlider.stopAuto();
-		    });
+		    /* $('.loveSlide a').focusin(function () {
+		    	loveSlide.stopAuto();
+		    }); */
 
 		    $(".prev").on("click",function(){
 		        loveSlide.goToPrevSlide();
@@ -273,17 +274,17 @@
 	      closeBtn = '.quick-close';
 	  
 	  function getTarget(t) {
-	    return $(t).attr('id');
+	    return $(t).attr('data-tooltip');
 	  }
 	  
 	  function open(t) {
-	    var showTarget = $('[data-focus="modal-' + t + '"]');
+	    var showTarget = $('[data-focus="' + t + '"]');
 	    showTarget.show().focus();
 	    showTarget.find('.quick-close').data('activeTarget', t);
 	  }
 	  
 	  function close(t) {
-	    var activeTarget = $('[data-focus="modal-' + t + '"]');
+	    var activeTarget = $('[data-focus="' + t + '"]');
 	    activeTarget.hide();
 	    $('[data-tooltip="' + t + '"]').focus();
 	  }
