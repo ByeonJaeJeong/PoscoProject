@@ -48,7 +48,8 @@
 			<!--util 끝  -->
 
 			<div id="all-menu">
-				<a href="#" class="btn-all-menu" aria-label="전체메뉴보기"></a>
+				<a href="#" class="btn-all-menu" aria-label="전체메뉴보기" data-tooltip="modal-all"></a>
+				<jsp:include page="all-menu.jsp"></jsp:include>
 			</div>
 			<!-- all menu 끝  -->
 			<img src="/img/header/withposco.gif" alt="with POSCO" class="withposco mobile-hide">

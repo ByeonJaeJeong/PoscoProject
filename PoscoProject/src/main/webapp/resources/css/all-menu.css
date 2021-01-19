@@ -1,0 +1,133 @@
+@charset "EUC-KR";
+header #all-menu .bg {
+    width: 100%;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid #ccc;
+    z-index: 1;
+    display: none;
+}
+header #all-menu .bg .all-menu-close {
+    position: absolute;
+    right: 50%;
+    margin-right: -564px;
+    width: 21px;
+    height: 21px;
+    background: url(/img/header_close.png) no-repeat center;
+    top: 30px;
+}
+header #all-menu .bg .top {
+    border-bottom: 1px solid #e5e5e5;
+}
+header #all-menu .bg .top .container {
+    position: relative;
+}
+header #all-menu .bg .top .container h1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 110px;
+    height: 80px;
+    margin-left: 15px;
+}
+header #all-menu .bg .top .container h1 a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url(/img/header/header_ci.png) no-repeat 0 0;
+}
+header #all-menu .bg .top .container .submenu {
+    line-height: 80px;
+    font-size: 15px;
+    padding-right: 18px;
+    color: #222;
+    background: url(/img/header/header_btn_submenu.png) no-repeat right top;
+    float: right;
+    margin-right: 60px;
+}
+header #all-menu .bg .top .container .submenu.on {
+    background-position: right bottom;
+}
+header #all-menu .bg .top .container:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+/* all-menu-body */
+header #all-menu .bg .all-menu-body {
+    height: 500px;
+    overflow-y: auto;
+}
+header #all-menu .bg .all-menu-body .container {
+    padding-top: 40px;
+    display: table;
+    table-layout: fixed;
+    margin-top: 30px;
+    border-top: 1px #dedede solid;
+}
+header #all-menu .bg .all-menu-body .container:first-child {
+    margin-top: 0;
+    border-top: 0;
+}
+header #all-menu .bg .all-menu-body .container .col {
+    display: table-cell;
+    width: 25%;
+    position: relative;
+}
+header #all-menu .bg .all-menu-body .container .col dt {
+    margin-bottom: 18px;
+}
+header #all-menu .bg .all-menu-body .container .col dt a {
+    color: #005891;
+    font-size: 16px;
+    font-weight: 700;
+}
+header #all-menu .bg .all-menu-body .container .col dt.gnb_citizenship {
+    margin-top: 54px;
+}
+header #all-menu .bg .all-menu-body .container .col dt.gnb_product {
+    margin-top: 52px;
+}
+header #all-menu .bg .all-menu-body .container .col dd {
+    margin-bottom: 18px;
+}
+
+header #all-menu .bg .all-menu-body .container .col dd > a {
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+}
+header #all-menu .bg .all-menu-body .container .col dd ul {
+    margin-top: 15px;
+    display: none;
+}
+header #all-menu .bg .all-menu-body .container .col dd ul li {
+    margin-bottom: 10px;
+}
+header #all-menu .bg .all-menu-body .container .col dd ul li a {
+    font-size: 15px;
+    line-height: 24px;
+    padding-left: 10px;
+    text-align: left;
+    background: url(../_images/common/bu_line.png) no-repeat 0 12px;
+}
+header #all-menu .bg .all-menu-body .container .col dl.dl_space {
+    margin-top: 54px;
+}
+header #all-menu .bg .all-menu-body .container .col dl.dl_space {
+    margin-top: 54px;
+}
+header #all-menu .bg .all-menu-body .container .col {
+    display: table-cell;
+    width: 25%;
+    position: relative;
+}
+/* ¸ð¹ÙÀÏ */
+.mobile-only {
+    display: none;
+}
+header #all-menu .bg .top {
+    border-bottom: 1px solid #e5e5e5;
+}
