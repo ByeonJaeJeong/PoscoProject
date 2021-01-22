@@ -30,7 +30,7 @@ public class HomeController {
 		
 		return "main";
 	}
-	@RequestMapping(value = "/posco" , method = RequestMethod.GET)
+	@RequestMapping(value = "/posco")
 	public String mainPage(Locale locale, Model model) {
 		logger.info("정상실행 완료! /posco 메인.페이지로 이동");
 		

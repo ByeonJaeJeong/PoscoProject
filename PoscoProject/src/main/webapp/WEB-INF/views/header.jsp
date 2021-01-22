@@ -21,6 +21,25 @@
 				<div class="search">
 					<a href="#" id="top-search">검색</a>
 				</div>
+				<div class="search-act inter-pannel" data-focus="modal-search" data-focus-prev="modal-search-close" tabindex="0">
+			<form name="srchform1" id="srchform1" method="post" action="/homepage/docs/kor6/jsp/search/search_center.jsp">
+			<input type="hidden" name="DocStart" value="">
+            <input type="hidden" name="DocMax" value="">
+            <input type="hidden" name="sortGubun" value="">
+				<div class="container">
+					<div class="form">
+						<input type="text" placeholder="검색어를 입력해주세요" id="top-search-input" name="QueryText" onfocus="this.value='';" title="검색하기">
+						<button aria-label="검색하기"></button>
+					</div>
+
+					<!--제품검색 바로가기 시작
+					<button class="searchBtn_N" aria-label="제품검색 바로가기" onClick="window.open('http://www.posco.co.kr/homepage/docs/eng6/jsp/s91a0000001i.jsp')">제품검색 바로가기</button>
+					제품검색 바로가기 끝-->
+
+					<a href="#" class="search-close" data-focus="modal-search-close" data-focus-next="modal-search">검색창 닫기</a>
+				</div>
+			</form>
+		</div>
 				<div class="search-act inter-panel"></div>
 				<div class="login mobile-hide">
 					<a href="#">로그인</a>

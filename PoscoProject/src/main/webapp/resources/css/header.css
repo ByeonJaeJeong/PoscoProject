@@ -105,6 +105,55 @@ header #util>div a{
 header #top-search{
 	background: url("/img/header/header_util.png") no-repeat -20px 0;
 }
+header #util .search-act {
+    width: 100%;
+    height: 120px;
+    background: #f5f5f5;
+    position: fixed;
+    left: 0;
+    top: 80px;
+    display: none;
+    border-bottom: 1px solid #ccc;
+}
+.ribbon-on header #util .search-act {
+    top: 160px;
+}
+header #util .search-act .container .form input[type="text"] {
+    line-height: 60px;
+    font-size: 20px;
+    font-weight: 700;
+    text-indent: 30px;
+    height: 60px;
+    width: 500px;
+    border: none;
+}
+header #util .search-act .container .form button {
+    float: right;
+    width: 60px;
+    height: 60px;
+    background: url(/img/header/header_btn_search.png) no-repeat center;
+}
+header #util .search-act .container .form {
+    display: inline-block;
+    height: 60px;
+    background: #fff;
+    width: 570px;
+    text-align: left;
+}
+header #util .search-act .container {
+    text-align: center;
+    padding-top: 30px;
+    position: relative;
+}
+header #util .search-act .container .search-close {
+    position: absolute;
+    right: 0;
+    width: 21px;
+    height: 21px;
+    background: url(/img/header_close.png) no-repeat center;
+    top: 50px;
+    text-indent: -9999px;
+}
 header #util .quick a{
 	display: block;
     width: 164px;

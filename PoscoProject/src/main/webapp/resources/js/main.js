@@ -284,10 +284,17 @@ $(function(){
 			$(".all-menu-body .container .col dd ul").hide();
 		}
 	});
-	$(".all-menu-close").on("click",function(){
+	/*$(".all-menu-close").on("click",function(){
 		$("[data-focus=modal-all]").hide();
+	});*/
+	$("#top-search").on("click",function(){
+		$("[data-focus=modal-search]").show();
 	});
-	
+	//modal off
+	$("[data-focus-next]").on("click",function(){
+		var target=$(this).attr("data-focus-next");
+		$('[data-focus='+target+']').hide()
+		});
 	});
 	/* 쿠키 생성 script */
 	function setCookie(cname, cvalue, exdays) {
