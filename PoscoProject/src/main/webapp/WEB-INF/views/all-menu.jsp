@@ -250,7 +250,7 @@
 							</dt>
 							<dd>
 								
-								<a href="/homepage/docs/kor6/jsp/member/s91h1000010w.jsp">로그인</a>
+								<a href="/posco/member/login">로그인</a>
 								
 								<ul>
 									<li><a href="/homepage/docs/kor6/jsp/member/s91h1000010w.jsp">로그인</a></li>

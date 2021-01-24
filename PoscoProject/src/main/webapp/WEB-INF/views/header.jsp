@@ -5,7 +5,7 @@
 	<header class="container-full">
 		<div class="container">
 			<h1>
-				<a href="#">포스코</a>
+				<a href="/posco">포스코</a>
 			</h1>
 			<div id="gnb">
 				<ul class="menu">

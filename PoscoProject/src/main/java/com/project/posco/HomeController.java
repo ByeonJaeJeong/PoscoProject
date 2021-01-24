@@ -22,7 +22,7 @@ public class HomeController {
 	/**
 	 * Simply selects the home view to render by returning its name.
 	 */
-	@RequestMapping(value = "/member/login", method = RequestMethod.GET)
+	@RequestMapping(value = "/posco/member/login", method = RequestMethod.GET)
 	public String home(Locale locale, Model model) {
 		logger.info("정상실행 완료! main.페이지로 이동");
 		
